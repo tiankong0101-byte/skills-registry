@@ -1,0 +1,81 @@
+{
+  "skill_name": "frontend-dev",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "build a landing page for a music streaming app",
+      "expected_output": "A visually striking landing page for a music streaming app with cinematic animations, AI-generated media assets, and persuasive copy.",
+      "assertions": [
+        "The page should have a hero section with a cinematic background video.",
+        "There should be a section for featured artists with tilt cards.",
+        "The landing page should include a CTA button with the text 'Get Started for Free'.",
+        "The page should have a footer with social media links and a privacy policy link."
+      ],
+      "files": [
+        "public/assets/hero-bg-1710xxx.mp4",
+        "public/assets/icon-feature-01.webp",
+        "public/assets/bgm-ambient-1710xxx.mp3",
+        "src/components/sections/hero.js",
+        "src/components/sections/featured-artists.js",
+        "src/components/sections/cta.js",
+        "src/components/sections/footer.js"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "generate an interactive art piece using p5.js",
+      "expected_output": "An interactive art piece created using p5.js with a philosophy-first workflow, conceptual seed, and refined masterpiece.",
+      "assertions": [
+        "The art piece should be output as a single self-contained HTML file.",
+        "The art piece should have a header and sidebar with seed controls.",
+        "The art piece should have a fixed section for the algorithm and parameters.",
+        "The art piece should have a seed value for randomness."
+      ],
+      "files": [
+        "templates/viewer.html",
+        "src/components/interactive-art.js"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "write conversion copy for a new product",
+      "expected_output": "Conversion copy that follows the AIDA framework and includes a clear CTA.",
+      "assertions": [
+        "The copy should have an attention-grabbing headline.",
+        "The copy should explain the problem and provide a solution.",
+        "The copy should include a clear CTA with an action verb, what they get, and urgency/ease.",
+        "The copy should be persuasive and compelling."
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "create a 3D WebGL animation using Three.js",
+      "expected_output": "A 3D WebGL animation created using Three.js with cinematic scroll animations and performance optimization.",
+      "assertions": [
+        "The animation should be output as a single self-contained HTML file.",
+        "The animation should use the `@react-three/fiber` library for rendering.",
+        "The animation should have a `Canvas` component with its own `use client` boundary.",
+        "The animation should have a `layout` and `layoutId` prop for layout transitions."
+      ],
+      "files": [
+        "templates/viewer.html",
+        "src/components/3d-animation.js"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "generate a background music track for a marketing video",
+      "expected_output": "A background music track generated using AI with a loopable structure and no vocals.",
+      "assertions": [
+        "The music track should be output as an MP3 file.",
+        "The music track should have a length of 30 seconds.",
+        "The music track should be loopable.",
+        "The music track should have a clean and professional sound."
+      ],
+      "files": [
+        "public/assets/bgm-ambient-1710xxx.mp3"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "skill_name": "abm-ad-creative",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Generate ad creative for our Meta (Facebook/Instagram) campaign. We sell an AI writing assistant for content marketers. Main value prop: write blog posts 5x faster. Target audience: content marketing managers at B2B SaaS companies. Budget: $5k/month.",
+      "expected_output": "Should check for product-marketing-context.md first. Should generate creative following the angle-based approach: identify 3-5 angles (speed, quality, ROI, pain of blank page, competitive edge). For each angle, should generate primary text (≤125 chars), headline (≤40 chars), and description (≤30 chars) respecting Meta character limits. Should provide multiple variations per angle. Should suggest image/visual direction for each. Should organize output with angle name, hook, body, CTA for each variation.",
+      "assertions": [
+        "Checks for product-marketing-context.md",
+        "Uses angle-based generation approach",
+        "Identifies multiple angles (3-5)",
+        "Respects Meta character limits (125/40/30)",
+        "Generates multiple variations per angle",
+        "Suggests image or visual direction",
+        "Includes hook, body, and CTA for each",
+        "Recommends which angles to test first"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I need Google Ads copy for our CRM product. We're targeting the keyword 'best CRM for small business'. Need responsive search ads.",
+      "expected_output": "Should generate Google RSA creative respecting character limits: headlines (≤30 chars each, need 10-15 variations) and descriptions (≤90 chars each, need 4+ variations). Should note that pinning should be used sparingly as it reduces optimization. Should include the target keyword in headlines. Should provide multiple angle-based variations.",
+      "assertions": [
+        "Respects Google RSA character limits (30 char headlines, 90 char descriptions)",
+        "Generates 10-15 headline variations",
+        "Generates 4+ description variations",
+        "Includes target keyword in headlines",
+        "Notes pinning should be used sparingly per skill guidance",
+        "Uses angle-based variation approach"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Here's our ad performance data: Ad A (pain point angle) - CTR 2.1%, CPC $3.20, Conv rate 4.5%. Ad B (social proof angle) - CTR 1.4%, CPC $4.10, Conv rate 6.2%. Ad C (feature angle) - CTR 0.8%, CPC $5.50, Conv rate 2.1%. Help me iterate on these.",
+      "expected_output": "Should activate the iteration-from-performance mode. Should analyze: Ad A has best CTR, Ad B has best conversion rate, Ad C is underperforming. Should recommend doubling down on pain point and social proof angles, pausing or reworking feature angle.",
+      "assertions": [
+        "Activates iteration mode based on performance data",
+        "Analyzes CTR, CPC, and conversion rate for each ad",
+        "Identifies winning angles from the data",
+        "Recommends pausing or reworking underperforming creative",
+        "Generates new variations combining winning elements"
+      ],
+      "files": []
+    }
+  ]
+}

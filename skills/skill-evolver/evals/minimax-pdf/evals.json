@@ -1,0 +1,68 @@
+{
+  "skill_name": "minimax-pdf",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a professional proposal for the Strategy Team with a due date of October 2025.",
+      "expected_output": "A PDF document titled 'Q3 Strategy Review' with a professional design, including a proposal cover and body.",
+      "assertions": [
+        "The document should have a cover with the title 'Q3 Strategy Review' and a professional design.",
+        "The document should have a body with a proposal structure, including sections and paragraphs.",
+        "The document should be print-ready with the correct color scheme and typography."
+      ],
+      "files": [
+        "report.pdf"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Fill in the form fields of 'form.pdf' with the following values: FirstName = Jane, Agree = true, Country = US.",
+      "expected_output": "A PDF document named 'filled.pdf' with the form fields filled in as specified.",
+      "assertions": [
+        "The document should have the form fields 'FirstName', 'Agree', and 'Country' filled with the provided values.",
+        "The layout and design of the form should remain unchanged.",
+        "The document should be a valid PDF file."
+      ],
+      "files": [
+        "filled.pdf"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Reformat 'source.md' into a report titled 'My Report' with a report design.",
+      "expected_output": "A PDF document named 'output.pdf' with the content from 'source.md' reformatted into a report with a report design.",
+      "assertions": [
+        "The document should have the title 'My Report' and be formatted as a report with the correct design.",
+        "The content from 'source.md' should be accurately reformatted into the report structure.",
+        "The document should be print-ready with the correct color scheme and typography."
+      ],
+      "files": [
+        "output.pdf"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Create a minimalist resume for a software engineer with a dark background and a single accent bar.",
+      "expected_output": "A PDF document titled 'Software Engineer Resume' with a minimalist design, including a dark background and a single accent bar.",
+      "assertions": [
+        "The document should have a cover with the title 'Software Engineer Resume' and a minimalist design.",
+        "The document should have a body with a resume structure, including sections and paragraphs.",
+        "The document should be print-ready with a dark background and a single accent bar."
+      ],
+      "files": [
+        "resume.pdf"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Fill in the form fields of 'form.pdf' with invalid values: FirstName = Jane, Agree = invalid, Country = US.",
+      "expected_output": "An error message indicating that the 'Agree' field must be either 'true' or 'false'.",
+      "assertions": [
+        "The script should detect that the 'Agree' field value is invalid.",
+        "The script should output an error message indicating the correct format for the 'Agree' field.",
+        "The script should not modify the original 'form.pdf' file."
+      ],
+      "files": []
+    }
+  ]
+}

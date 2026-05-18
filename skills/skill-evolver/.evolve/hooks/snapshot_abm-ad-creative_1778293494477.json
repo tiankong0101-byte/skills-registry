@@ -1,0 +1,37 @@
+{
+  "skillName": "abm-ad-creative",
+  "wingId": 9,
+  "timestamp": "2026-05-09T02:24:54.469Z",
+  "metadata": {
+    "type": "round",
+    "round": 0,
+    "passRate": 0,
+    "accepted": false
+  },
+  "palaceStats": {
+    "wings": 14,
+    "rooms": 7,
+    "drawers": 7,
+    "halls": 11,
+    "versions": 19,
+    "activeVersions": 18
+  },
+  "bestVersion": {
+    "id": 19,
+    "wing_id": 9,
+    "version_id": "r0-1778293494459",
+    "pass_rate": 0,
+    "score": 0.425,
+    "dominated": 0,
+    "dominated_by_id": null,
+    "created_at": "2026-05-09 02:24:54",
+    "meta": "{\"assertionCount\":3}"
+  },
+  "recentHalls": [
+    {
+      "hall_type": "hall_failures",
+      "round": 0,
+      "created_at": "2026-05-09 02:24:54"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "skill_name": "systematic-debugging",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "My React app shows 'TypeError: Cannot read property of undefined'. The build passes but it crashes in the browser. How do I fix it?",
+      "expected_output": "Should follow Phase 1 (Root Cause) before any fix: read error carefully, reproduce consistently, check recent changes. Should trace data flow. Should NOT propose fixes until root cause is found. Should identify: which component, what data shape, where it originates.",
+      "assertions": [
+        "Does NOT propose fixes before root cause investigation",
+        "Mentions reading error messages carefully",
+        "Mentions reproducing the error consistently",
+        "Mentions checking recent changes (git diff)",
+        "Mentions tracing data flow to find origin",
+        "Follows the Iron Law: NO FIXES WITHOUT ROOT CAUSE"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I tried two quick fixes but the bug keeps coming back. What should I do?",
+      "expected_output": "Should recognize the 'multiple fixes failed' red flag. Should return to Phase 1. Should question whether the approach is correct if 3+ fixes failed. Should not add more fixes on top.",
+      "assertions": [
+        "Recognizes '3+ failed fixes' as a red flag",
+        "Returns to Phase 1 (root cause)",
+        "Questions architecture if fixes keep failing",
+        "Does NOT suggest another quick fix attempt",
+        "Follows scientific method: form hypothesis, test minimally"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "My CI pipeline fails on the test step but tests pass locally. How do I debug this?",
+      "expected_output": "Should follow multi-component evidence gathering. Should identify environment differences (Node version, env vars, dependencies). Should check recent changes in CI config. Should compare working vs broken environments systematically.",
+      "assertions": [
+        "Gathers evidence at component boundaries",
+        "Checks for environmental differences",
+        "Mentions checking recent changes",
+        "Mentions finding working examples for comparison",
+        "Follows scientific method: one variable at a time"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "I'm under time pressure to fix a production bug. Can I just try a quick fix first?",
+      "expected_output": "Should strongly recommend against quick fixes especially under time pressure. Should reference the Iron Law and the data showing systematic approach is FASTER (15-30 min vs 2-3 hours). Should not allow skipping Phase 1.",
+      "assertions": [
+        "Recommends AGAINST quick fixes even under pressure",
+        "Cites the Iron Law: NO FIXES WITHOUT ROOT CAUSE",
+        "Mentions that emergencies make guessing MORE tempting, not less",
+        "References systematic approach being faster than thrashing",
+        "Insists on following the 4-phase process"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "My Python script crashes with 'IndexError: list index out of range'. I've already tried changing the loop bounds.",
+      "expected_output": "Should recognize that changing loop bounds without understanding is a red flag. Should return to Phase 1: read the error (out of range means index exceeds list length), reproduce, check what changed, trace data flow. Should find root cause before more changes.",
+      "assertions": [
+        "Recognizes 'changed loop bounds without investigation' as wrong approach",
+        "Returns to Phase 1: read error, reproduce, check changes",
+        "Mentions tracing data flow",
+        "Does NOT suggest more loop changes without root cause",
+        "Follows the hypothesis-and-testing approach"
+      ],
+      "files": []
+    }
+  ]
+}

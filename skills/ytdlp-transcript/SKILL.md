@@ -10,6 +10,12 @@ metadata:
       - youtube.com
       - www.youtube.com
       - youtu.be
+triggers:
+  - "watch youtube"
+  - "summarize video"
+  - "video transcript"
+  - "youtube summary"
+  - "analyze video"
 ---
 
 # ytdlp-transcript
@@ -22,8 +28,19 @@ Specialized skill for extracting transcripts from YouTube videos and processing 
 - User wants to summarize or analyze video content via its transcript
 - User needs to search within a video's spoken content
 - User requests translation of video captions
+- "watch youtube", "summarize video", "video transcript", "youtube summary", "analyze video"
 
 ## Usage
+
+### Get Transcript
+
+Retrieve the text transcript of a video:
+
+```bash
+python3 {baseDir}/scripts/get_transcript.py "https://www.youtube.com/watch?v=VIDEO_ID"
+```
+
+### Processing Workflow
 
 1. **Validate URL** — Check that the provided URL is a valid YouTube video URL (youtube.com/watch, youtu.be, youtube.com/shorts). Extract the video ID.
 2. **Fetch Transcript** — Retrieve the available transcript:
@@ -44,6 +61,7 @@ Specialized skill for extracting transcripts from YouTube videos and processing 
 
 ## Requirements
 
-- No external API keys required.
-- Domain access: `youtube.com`, `www.youtube.com`, `youtu.be`.
-- Requires `yt-dlp` or equivalent tool installed for transcript extraction.
+- No external API keys required
+- Domain access: `youtube.com`, `www.youtube.com`, `youtu.be`
+- Requires `yt-dlp` installed and available in PATH
+- Works with videos that have closed captions (CC) or auto-generated subtitles

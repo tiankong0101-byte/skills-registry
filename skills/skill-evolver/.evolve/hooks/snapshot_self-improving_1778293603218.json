@@ -1,0 +1,42 @@
+{
+  "skillName": "self-improving",
+  "wingId": 10,
+  "timestamp": "2026-05-09T02:26:43.211Z",
+  "metadata": {
+    "type": "round",
+    "round": 0,
+    "passRate": 0.2,
+    "accepted": false
+  },
+  "palaceStats": {
+    "wings": 14,
+    "rooms": 7,
+    "drawers": 7,
+    "halls": 13,
+    "versions": 21,
+    "activeVersions": 20
+  },
+  "bestVersion": {
+    "id": 20,
+    "wing_id": 10,
+    "version_id": "r0-1778293531580",
+    "pass_rate": 0.2,
+    "score": 0.4,
+    "dominated": 0,
+    "dominated_by_id": null,
+    "created_at": "2026-05-09 02:25:31",
+    "meta": "{\"assertionCount\":5}"
+  },
+  "recentHalls": [
+    {
+      "hall_type": "hall_failures",
+      "round": 0,
+      "created_at": "2026-05-09 02:26:43"
+    },
+    {
+      "hall_type": "hall_failures",
+      "round": 0,
+      "created_at": "2026-05-09 02:25:31"
+    }
+  ]
+}

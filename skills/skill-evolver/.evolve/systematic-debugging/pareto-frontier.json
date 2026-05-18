@@ -1,0 +1,162 @@
+{
+  "versions": [
+    {
+      "id": 1775639858160,
+      "timestamp": "2026-04-08T09:17:38.160Z",
+      "passRate": 0.4,
+      "score": 0.48,
+      "assertionCount": 5,
+      "dominated": false
+    },
+    {
+      "id": 1775639910432,
+      "timestamp": "2026-04-08T09:18:30.432Z",
+      "passRate": 0.4,
+      "score": 0.48,
+      "assertionCount": 5,
+      "dominated": false
+    },
+    {
+      "id": 1775640030574,
+      "timestamp": "2026-04-08T09:20:30.574Z",
+      "passRate": 0.4,
+      "score": 0.48,
+      "assertionCount": 5,
+      "dominated": false
+    },
+    {
+      "id": 1775640081153,
+      "timestamp": "2026-04-08T09:21:21.153Z",
+      "passRate": 0.4,
+      "score": 0.48,
+      "assertionCount": 5,
+      "dominated": false
+    },
+    {
+      "id": 1775640156821,
+      "timestamp": "2026-04-08T09:22:36.821Z",
+      "passRate": 0.4,
+      "score": 0.48,
+      "assertionCount": 5,
+      "dominated": false
+    },
+    {
+      "id": 1775640228581,
+      "timestamp": "2026-04-08T09:23:48.581Z",
+      "passRate": 0.4,
+      "score": 0.48,
+      "assertionCount": 5,
+      "dominated": false
+    },
+    {
+      "id": 1775640279784,
+      "timestamp": "2026-04-08T09:24:39.784Z",
+      "passRate": 0.4,
+      "score": 0.48,
+      "assertionCount": 5,
+      "dominated": false
+    },
+    {
+      "id": 1775640384370,
+      "timestamp": "2026-04-08T09:26:24.371Z",
+      "passRate": 0.4,
+      "score": 0.48,
+      "assertionCount": 5,
+      "dominated": false
+    },
+    {
+      "id": 1775640436392,
+      "timestamp": "2026-04-08T09:27:16.392Z",
+      "passRate": 0.4,
+      "score": 0.48,
+      "assertionCount": 5,
+      "dominated": false
+    },
+    {
+      "id": 1775640527919,
+      "timestamp": "2026-04-08T09:28:47.919Z",
+      "passRate": 0.4,
+      "score": 0.48,
+      "assertionCount": 5,
+      "dominated": false
+    },
+    {
+      "id": 1775640781318,
+      "timestamp": "2026-04-08T09:33:01.318Z",
+      "passRate": 0.4,
+      "score": 0.48,
+      "assertionCount": 5,
+      "dominated": false
+    },
+    {
+      "id": 1775641033716,
+      "timestamp": "2026-04-08T09:37:13.716Z",
+      "passRate": 0.4,
+      "score": 0.48,
+      "assertionCount": 5,
+      "dominated": false
+    },
+    {
+      "id": 1775718975438,
+      "timestamp": "2026-04-09T07:16:15.438Z",
+      "passRate": 0.4,
+      "score": 0.48,
+      "assertionCount": 5,
+      "dominated": false
+    }
+  ],
+  "skills": {
+    "v1": {
+      "passRate": 0.4,
+      "dominated": false
+    },
+    "v2": {
+      "passRate": 0.4,
+      "dominated": false
+    },
+    "v3": {
+      "passRate": 0.4,
+      "dominated": false
+    },
+    "v4": {
+      "passRate": 0.4,
+      "dominated": false
+    },
+    "v5": {
+      "passRate": 0.4,
+      "dominated": false
+    },
+    "v6": {
+      "passRate": 0.4,
+      "dominated": false
+    },
+    "v7": {
+      "passRate": 0.4,
+      "dominated": false
+    },
+    "v8": {
+      "passRate": 0.4,
+      "dominated": false
+    },
+    "v9": {
+      "passRate": 0.4,
+      "dominated": false
+    },
+    "v10": {
+      "passRate": 0.4,
+      "dominated": false
+    },
+    "v11": {
+      "passRate": 0.4,
+      "dominated": false
+    },
+    "v12": {
+      "passRate": 0.4,
+      "dominated": false
+    },
+    "v13": {
+      "passRate": 0.4,
+      "dominated": false
+    }
+  }
+}

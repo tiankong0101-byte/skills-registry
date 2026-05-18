@@ -1,0 +1,1033 @@
+{
+  "history": [
+    {
+      "round": 0,
+      "result": {
+        "passed": false,
+        "passRate": 0.4,
+        "score": 0.48,
+        "results": [
+          {
+            "eval_id": 1,
+            "passed": true,
+            "score": 1,
+            "assertion_results": [
+              {
+                "assertion": "Does NOT propose fixes before root cause investigation",
+                "passed": true,
+                "evidence": "The Skill content emphasizes the importance of root cause investigation before proposing fixes and explicitly states 'NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST'.",
+                "suggestion": "N/A"
+              },
+              {
+                "assertion": "Mentions reading error messages carefully",
+                "passed": true,
+                "evidence": "The Skill content includes a step in Phase 1 that instructs to 'Read Error Messages Carefully'.",
+                "suggestion": "N/A"
+              },
+              {
+                "assertion": "Mentions reproducing the error consistently",
+                "passed": true,
+                "evidence": "The Skill content includes a step in Phase 1 that instructs to 'Reproduce Consistently'.",
+                "suggestion": "N/A"
+              },
+              {
+                "assertion": "Mentions checking recent changes (git diff)",
+                "passed": true,
+                "evidence": "The Skill content includes a step in Phase 1 that instructs to 'Check Recent Changes' and provides an example of using 'git diff'.",
+                "suggestion": "N/A"
+              },
+              {
+                "assertion": "Mentions tracing data flow to find origin",
+                "passed": true,
+                "evidence": "The Skill content includes a step in Phase 1 that instructs to 'Trace Data Flow' and explains how to trace data flow to find the source of the issue.",
+                "suggestion": "N/A"
+              },
+              {
+                "assertion": "Follows the Iron Law: NO FIXES WITHOUT ROOT CAUSE",
+                "passed": true,
+                "evidence": "The Skill content explicitly states the Iron Law and emphasizes the importance of following it.",
+                "suggestion": "N/A"
+              }
+            ],
+            "overall_feedback": "The Skill correctly follows the systematic debugging methodology and ensures that root cause investigation is completed before proposing any fixes. It adheres to the Iron Law and provides a comprehensive guide for each phase of the debugging process.",
+            "confidence": 1,
+            "raw": "```json\n{\n  \"eval_id\": 1,\n  \"passed\": true,\n  \"score\": 1.0,\n  \"assertion_results\": [\n    {\n      \"assertion\": \"Does NOT propose fixes before root cause investigation\",\n      \"passed\": true,\n      \"evidence\": \"The Skill content emphasizes the importance of root cause investigation before proposing fixes and explicitly states 'NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST'.\",\n      \"suggestion\": \"N/A\"\n    },\n    {\n      \"assertion\": \"Mentions reading error messages carefully\",\n      \"passed\": true,\n      \"evidence\": \"The Skill content includes a step in Phase 1 that instructs to 'Read Error Messages Carefully'.\",\n      \"suggestion\": \"N/A\"\n    },\n    {\n      \"assertion\": \"Mentions reproducing the error consistently\",\n      \"passed\": true,\n      \"evidence\": \"The Skill content includes a step in Phase 1 that instructs to 'Reproduce Consistently'.\",\n      \"suggestion\": \"N/A\"\n    },\n    {\n      \"assertion\": \"Mentions checking recent changes (git diff)\",\n      \"passed\": true,\n      \"evidence\": \"The Skill content includes a step in Phase 1 that instructs to 'Check Recent Changes' and provides an example of using 'git diff'.\",\n      \"suggestion\": \"N/A\"\n    },\n    {\n      \"assertion\": \"Mentions tracing data flow to find origin\",\n      \"passed\": true,\n      \"evidence\": \"The Skill content includes a step in Phase 1 that instructs to 'Trace Data Flow' and explains how to trace data flow to find the source of the issue.\",\n      \"suggestion\": \"N/A\"\n    },\n    {\n      \"assertion\": \"Follows the Iron Law: NO FIXES WITHOUT ROOT CAUSE\",\n      \"passed\": true,\n      \"evidence\": \"The Skill content explicitly states the Iron Law and emphasizes the importance of following it.\",\n      \"suggestion\": \"N/A\"\n    }\n  ],\n  \"overall_feedback\": \"The Skill correctly follows the systematic debugging methodology and ensures that root cause investigation is completed before proposing any fixes. It adheres to the Iron Law and provides a comprehensive guide for each phase of the debugging process.\",\n  \"confidence\": 1.0\n}\n```"
+          },
+          {
+            "eval_id": 2,
+            "passed": true,
+            "score": 1,
+            "assertion_results": [
+              {
+                "assertion": "Recognizes '3+ failed fixes' as a red flag",
+                "passed": true,
+                "evidence": "The Skill content includes a red flag for '3+ fixes failed' and instructs to question the architecture if fixes keep failing.",
+                "suggestion": "N/A"
+              },
+              {
+                "assertion": "Returns to Phase 1 (root cause)",
+                "passed": true,
+                "evidence": "The Skill content explicitly states 'STOP and return to Phase 1' if multiple fixes fail.",
+                "suggestion": "N/A"
+              },
+              {
+                "assertion": "Questions architecture if fixes keep failing",
+                "passed": true,
+                "evidence": "The Skill content advises to 'Question Architecture' if each fix reveals new shared state/coupling/problem in different places.",
+                "suggestion": "N/A"
+              },
+              {
+                "assertion": "Does NOT suggest another quick fix attempt",
+                "passed": true,
+                "evidence": "The Skill content includes a red flag for 'Just one more fix attempt' and instructs to return to Phase 1 instead.",
+                "suggestion": "N/A"
+              },
+              {
+                "assertion": "Follows scientific method: form hypothesis, test minimally",
+                "passed": true,
+                "evidence": "The Skill content outlines the scientific method, including forming a hypothesis and testing minimally.",
+                "suggestion": "N/A"
+              }
+            ],
+            "overall_feedback": "The Skill correctly handles the test case by recognizing the 'multiple fixes failed' red flag, returning to Phase 1, questioning the architecture, and not suggesting another quick fix attempt. It also follows the scientific method.",
+            "confidence": 1,
+            "raw": "```json\n{\n  \"eval_id\": 2,\n  \"passed\": true,\n  \"score\": 1.0,\n  \"assertion_results\": [\n    {\n      \"assertion\": \"Recognizes '3+ failed fixes' as a red flag\",\n      \"passed\": true,\n      \"evidence\": \"The Skill content includes a red flag for '3+ fixes failed' and instructs to question the architecture if fixes keep failing.\",\n      \"suggestion\": \"N/A\"\n    },\n    {\n      \"assertion\": \"Returns to Phase 1 (root cause)\",\n      \"passed\": true,\n      \"evidence\": \"The Skill content explicitly states 'STOP and return to Phase 1' if multiple fixes fail.\",\n      \"suggestion\": \"N/A\"\n    },\n    {\n      \"assertion\": \"Questions architecture if fixes keep failing\",\n      \"passed\": true,\n      \"evidence\": \"The Skill content advises to 'Question Architecture' if each fix reveals new shared state/coupling/problem in different places.\",\n      \"suggestion\": \"N/A\"\n    },\n    {\n      \"assertion\": \"Does NOT suggest another quick fix attempt\",\n      \"passed\": true,\n      \"evidence\": \"The Skill content includes a red flag for 'Just one more fix attempt' and instructs to return to Phase 1 instead.\",\n      \"suggestion\": \"N/A\"\n    },\n    {\n      \"assertion\": \"Follows scientific method: form hypothesis, test minimally\",\n      \"passed\": true,\n      \"evidence\": \"The Skill content outlines the scientific method, including forming a hypothesis and testing minimally.\",\n      \"suggestion\": \"N/A\"\n    }\n  ],\n  \"overall_feedback\": \"The Skill correctly handles the test case by recognizing the 'multiple fixes failed' red flag, returning to Phase 1, questioning the architecture, and not suggesting another quick fix attempt. It also follows the scientific method.\",\n  \"confidence\": 1.0\n}\n```"
+          },
+          {
+            "eval_id": 3,
+            "passed": false,
+            "score": 0.4,
+            "assertion_results": [
+              {
+                "assertion": "Gathers evidence at component boundaries",
+                "passed": false,
+                "evidence": "The Skill does not mention gathering evidence at component boundaries.",
+                "suggestion": "The Skill should include steps to log data entering and exiting each component."
+              },
+              {
+                "assertion": "Checks for environmental differences",
+                "passed": true,
+                "evidence": "The Skill mentions checking for environmental differences (Node version, env vars, dependencies).",
+                "suggestion": "N/A"
+              },
+              {
+                "assertion": "Mentions checking recent changes",
+                "passed": true,
+                "evidence": "The Skill mentions checking recent changes in CI config.",
+                "suggestion": "N/A"
+              },
+              {
+                "assertion": "Mentions finding working examples for comparison",
+                "passed": false,
+                "evidence": "The Skill does not mention finding working examples for comparison.",
+                "suggestion": "The Skill should include steps to locate similar working code in the same codebase."
+              },
+              {
+                "assertion": "Follows scientific method: one variable at a time",
+                "passed": false,
+                "evidence": "The Skill does not mention following the scientific method with one variable at a time.",
+                "suggestion": "The Skill should include steps to form a hypothesis, test it minimally, and verify before continuing."
+              }
+            ],
+            "overall_feedback": "The Skill provides some relevant steps for debugging CI pipeline failures but lacks specific instructions on gathering evidence at component boundaries, finding working examples, and following the scientific method with one variable at a time.",
+            "confidence": 0.8,
+            "raw": "```json\n{\n  \"eval_id\": 3,\n  \"passed\": false,\n  \"score\": 0.4,\n  \"assertion_results\": [\n    {\n      \"assertion\": \"Gathers evidence at component boundaries\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention gathering evidence at component boundaries.\",\n      \"suggestion\": \"The Skill should include steps to log data entering and exiting each component.\"\n    },\n    {\n      \"assertion\": \"Checks for environmental differences\",\n      \"passed\": true,\n      \"evidence\": \"The Skill mentions checking for environmental differences (Node version, env vars, dependencies).\",\n      \"suggestion\": \"N/A\"\n    },\n    {\n      \"assertion\": \"Mentions checking recent changes\",\n      \"passed\": true,\n      \"evidence\": \"The Skill mentions checking recent changes in CI config.\",\n      \"suggestion\": \"N/A\"\n    },\n    {\n      \"assertion\": \"Mentions finding working examples for comparison\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention finding working examples for comparison.\",\n      \"suggestion\": \"The Skill should include steps to locate similar working code in the same codebase.\"\n    },\n    {\n      \"assertion\": \"Follows scientific method: one variable at a time\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention following the scientific method with one variable at a time.\",\n      \"suggestion\": \"The Skill should include steps to form a hypothesis, test it minimally, and verify before continuing.\"\n    }\n  ],\n  \"overall_feedback\": \"The Skill provides some relevant steps for debugging CI pipeline failures but lacks specific instructions on gathering evidence at component boundaries, finding working examples, and following the scientific method with one variable at a time.\",\n  \"confidence\": 0.8\n}\n```"
+          },
+          {
+            "eval_id": 4,
+            "passed": false,
+            "score": 0,
+            "assertion_results": [
+              {
+                "assertion": "Recommends AGAINST quick fixes even under pressure",
+                "passed": false,
+                "evidence": "The Skill does not explicitly recommend against quick fixes under pressure. Instead, it suggests using the systematic debugging process even in emergencies.",
+                "suggestion": "The Skill should include a clear statement advising against quick fixes, especially under time pressure."
+              },
+              {
+                "assertion": "Cites the Iron Law: NO FIXES WITHOUT ROOT CAUSE",
+                "passed": true,
+                "evidence": "The Skill correctly cites the Iron Law: 'NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST'.",
+                "suggestion": "N/A"
+              },
+              {
+                "assertion": "Mentions that emergencies make guessing MORE tempting, not less",
+                "passed": false,
+                "evidence": "The Skill states that emergencies make guessing tempting, not less tempting.",
+                "suggestion": "The Skill should clarify that emergencies make guessing MORE tempting, not less."
+              },
+              {
+                "assertion": "References systematic approach being faster than thrashing",
+                "passed": true,
+                "evidence": "The Skill correctly references the systematic approach being faster than thrashing (15-30 minutes vs 2-3 hours).",
+                "suggestion": "N/A"
+              },
+              {
+                "assertion": "Insists on following the 4-phase process",
+                "passed": false,
+                "evidence": "The Skill does not explicitly insist on following the 4-phase process. Instead, it suggests using the process when necessary.",
+                "suggestion": "The Skill should include a clear statement emphasizing the importance of following the 4-phase process."
+              }
+            ],
+            "overall_feedback": "The Skill fails to address the key points of the test case, particularly regarding the recommendation against quick fixes and the insistence on following the 4-phase process.",
+            "confidence": 1,
+            "raw": "```json\n{\n  \"eval_id\": 4,\n  \"passed\": false,\n  \"score\": 0.0,\n  \"assertion_results\": [\n    {\n      \"assertion\": \"Recommends AGAINST quick fixes even under pressure\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly recommend against quick fixes under pressure. Instead, it suggests using the systematic debugging process even in emergencies.\",\n      \"suggestion\": \"The Skill should include a clear statement advising against quick fixes, especially under time pressure.\"\n    },\n    {\n      \"assertion\": \"Cites the Iron Law: NO FIXES WITHOUT ROOT CAUSE\",\n      \"passed\": true,\n      \"evidence\": \"The Skill correctly cites the Iron Law: 'NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST'.\",\n      \"suggestion\": \"N/A\"\n    },\n    {\n      \"assertion\": \"Mentions that emergencies make guessing MORE tempting, not less\",\n      \"passed\": false,\n      \"evidence\": \"The Skill states that emergencies make guessing tempting, not less tempting.\",\n      \"suggestion\": \"The Skill should clarify that emergencies make guessing MORE tempting, not less.\"\n    },\n    {\n      \"assertion\": \"References systematic approach being faster than thrashing\",\n      \"passed\": true,\n      \"evidence\": \"The Skill correctly references the systematic approach being faster than thrashing (15-30 minutes vs 2-3 hours).\",\n      \"suggestion\": \"N/A\"\n    },\n    {\n      \"assertion\": \"Insists on following the 4-phase process\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly insist on following the 4-phase process. Instead, it suggests using the process when necessary.\",\n      \"suggestion\": \"The Skill should include a clear statement emphasizing the importance of following the 4-phase process.\"\n    }\n  ],\n  \"overall_feedback\": \"The Skill fails to address the key points of the test case, particularly regarding the recommendation against quick fixes and the insistence on following the 4-phase process.\",\n  \"confidence\": 1.0\n}\n```"
+          },
+          {
+            "eval_id": 5,
+            "passed": false,
+            "score": 0,
+            "assertion_results": [
+              {
+                "assertion": "Recognizes 'changed loop bounds without investigation' as wrong approach",
+                "passed": false,
+                "evidence": "The Skill does not explicitly address the issue of changing loop bounds without investigation. Instead, it focuses on the general debugging process.",
+                "suggestion": "The Skill should include a specific check for changing loop bounds without investigation and explicitly state that this is a red flag that requires returning to Phase 1."
+              },
+              {
+                "assertion": "Returns to Phase 1: read error, reproduce, check changes",
+                "passed": false,
+                "evidence": "The Skill does not explicitly mention returning to Phase 1. Instead, it focuses on the general debugging process.",
+                "suggestion": "The Skill should include a specific step to return to Phase 1 if the issue is related to changing loop bounds without investigation."
+              },
+              {
+                "assertion": "Mentions tracing data flow",
+                "passed": false,
+                "evidence": "The Skill does not mention tracing data flow specifically.",
+                "suggestion": "The Skill should include a step to trace data flow, especially if the issue is related to loop bounds."
+              },
+              {
+                "assertion": "Does NOT suggest more loop changes without root cause",
+                "passed": false,
+                "evidence": "The Skill does not explicitly prevent suggesting more loop changes without root cause.",
+                "suggestion": "The Skill should include a specific check to ensure that no further changes are suggested without understanding the root cause."
+              },
+              {
+                "assertion": "Follows the hypothesis-and-testing approach",
+                "passed": false,
+                "evidence": "The Skill does not explicitly mention following the hypothesis-and-testing approach.",
+                "suggestion": "The Skill should include a step to form a hypothesis and test it minimally."
+              }
+            ],
+            "overall_feedback": "The Skill does not correctly handle the test case by not explicitly addressing the issue of changing loop bounds without investigation, not returning to Phase 1, not mentioning tracing data flow, not preventing further changes without root cause, and not following the hypothesis-and-testing approach.",
+            "confidence": 1,
+            "raw": "```json\n{\n  \"eval_id\": 5,\n  \"passed\": false,\n  \"score\": 0.0,\n  \"assertion_results\": [\n    {\n      \"assertion\": \"Recognizes 'changed loop bounds without investigation' as wrong approach\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly address the issue of changing loop bounds without investigation. Instead, it focuses on the general debugging process.\",\n      \"suggestion\": \"The Skill should include a specific check for changing loop bounds without investigation and explicitly state that this is a red flag that requires returning to Phase 1.\"\n    },\n    {\n      \"assertion\": \"Returns to Phase 1: read error, reproduce, check changes\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly mention returning to Phase 1. Instead, it focuses on the general debugging process.\",\n      \"suggestion\": \"The Skill should include a specific step to return to Phase 1 if the issue is related to changing loop bounds without investigation.\"\n    },\n    {\n      \"assertion\": \"Mentions tracing data flow\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention tracing data flow specifically.\",\n      \"suggestion\": \"The Skill should include a step to trace data flow, especially if the issue is related to loop bounds.\"\n    },\n    {\n      \"assertion\": \"Does NOT suggest more loop changes without root cause\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly prevent suggesting more loop changes without root cause.\",\n      \"suggestion\": \"The Skill should include a specific check to ensure that no further changes are suggested without understanding the root cause.\"\n    },\n    {\n      \"assertion\": \"Follows the hypothesis-and-testing approach\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly mention following the hypothesis-and-testing approach.\",\n      \"suggestion\": \"The Skill should include a step to form a hypothesis and test it minimally.\"\n    }\n  ],\n  \"overall_feedback\": \"The Skill does not correctly handle the test case by not explicitly addressing the issue of changing loop bounds without investigation, not returning to Phase 1, not mentioning tracing data flow, not preventing further changes without root cause, and not following the hypothesis-and-testing approach.\",\n  \"confidence\": 1.0\n}\n```"
+          }
+        ],
+        "failedAssertions": [
+          {
+            "assertion": "Gathers evidence at component boundaries",
+            "passed": false,
+            "evidence": "The Skill does not mention gathering evidence at component boundaries.",
+            "suggestion": "The Skill should include steps to log data entering and exiting each component."
+          },
+          {
+            "assertion": "Mentions finding working examples for comparison",
+            "passed": false,
+            "evidence": "The Skill does not mention finding working examples for comparison.",
+            "suggestion": "The Skill should include steps to locate similar working code in the same codebase."
+          },
+          {
+            "assertion": "Follows scientific method: one variable at a time",
+            "passed": false,
+            "evidence": "The Skill does not mention following the scientific method with one variable at a time.",
+            "suggestion": "The Skill should include steps to form a hypothesis, test it minimally, and verify before continuing."
+          },
+          {
+            "assertion": "Recommends AGAINST quick fixes even under pressure",
+            "passed": false,
+            "evidence": "The Skill does not explicitly recommend against quick fixes under pressure. Instead, it suggests using the systematic debugging process even in emergencies.",
+            "suggestion": "The Skill should include a clear statement advising against quick fixes, especially under time pressure."
+          },
+          {
+            "assertion": "Mentions that emergencies make guessing MORE tempting, not less",
+            "passed": false,
+            "evidence": "The Skill states that emergencies make guessing tempting, not less tempting.",
+            "suggestion": "The Skill should clarify that emergencies make guessing MORE tempting, not less."
+          },
+          {
+            "assertion": "Insists on following the 4-phase process",
+            "passed": false,
+            "evidence": "The Skill does not explicitly insist on following the 4-phase process. Instead, it suggests using the process when necessary.",
+            "suggestion": "The Skill should include a clear statement emphasizing the importance of following the 4-phase process."
+          },
+          {
+            "assertion": "Recognizes 'changed loop bounds without investigation' as wrong approach",
+            "passed": false,
+            "evidence": "The Skill does not explicitly address the issue of changing loop bounds without investigation. Instead, it focuses on the general debugging process.",
+            "suggestion": "The Skill should include a specific check for changing loop bounds without investigation and explicitly state that this is a red flag that requires returning to Phase 1."
+          },
+          {
+            "assertion": "Returns to Phase 1: read error, reproduce, check changes",
+            "passed": false,
+            "evidence": "The Skill does not explicitly mention returning to Phase 1. Instead, it focuses on the general debugging process.",
+            "suggestion": "The Skill should include a specific step to return to Phase 1 if the issue is related to changing loop bounds without investigation."
+          },
+          {
+            "assertion": "Mentions tracing data flow",
+            "passed": false,
+            "evidence": "The Skill does not mention tracing data flow specifically.",
+            "suggestion": "The Skill should include a step to trace data flow, especially if the issue is related to loop bounds."
+          },
+          {
+            "assertion": "Does NOT suggest more loop changes without root cause",
+            "passed": false,
+            "evidence": "The Skill does not explicitly prevent suggesting more loop changes without root cause.",
+            "suggestion": "The Skill should include a specific check to ensure that no further changes are suggested without understanding the root cause."
+          },
+          {
+            "assertion": "Follows the hypothesis-and-testing approach",
+            "passed": false,
+            "evidence": "The Skill does not explicitly mention following the hypothesis-and-testing approach.",
+            "suggestion": "The Skill should include a step to form a hypothesis and test it minimally."
+          }
+        ],
+        "overall_feedback": "Failed 3/5 test cases:\n- Gathers evidence at component boundaries: The Skill should include steps to log data entering and exiting each component.\n- Mentions finding working examples for comparison: The Skill should include steps to locate similar working code in the same codebase.\n- Follows scientific method: one variable at a time: The Skill should include steps to form a hypothesis, test it minimally, and verify before continuing.",
+        "confidence": 1,
+        "improvedContent": "# systematic-debugging\n\nSystematic debugging methodology - Always find root cause before attempting fixes.\n\n## The Iron Law\n\n```\nNO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST\n```\n\nIf you haven't completed Phase 1, you cannot propose fixes.\n\n## When to Use\n\nUse for ANY technical issue:\n\n- Test failures\n- Bugs in production\n- Unexpected behavior\n- Performance problems\n- Build failures\n- Integration issues\n\n**Use this ESPECIALLY when:**\n- Under time pressure (emergencies make guessing tempting)\n- \"Just one quick fix\" seems obvious\n- You've already tried multiple fixes\n- Previous fix didn't work\n- You don't fully understand the issue\n\n## The Four Phases\n\n### Phase 1: Root Cause Investigation\n\n**BEFORE attempting ANY fix:**\n\n- **Read Error Messages Carefully**\n  - Don't skip past errors or warnings\n  - They often contain the exact solution\n  - Read stack traces completely\n  - Note line numbers, file paths, error codes\n\n- **Reproduce Consistently**\n  - Can you trigger it reliably?\n  - What are the exact steps?\n  - Does it happen every time?\n  - If not reproducible → gather more data, don't guess\n\n- **Check Recent Changes**\n  - What changed that could cause this?\n  - Git diff, recent commits\n  - New dependencies, config changes\n  - Environmental differences\n\n- **Gather Evidence in Multi-Component Systems**\n  - For EACH component boundary:\n    - Log what data enters component\n    - Log what data exits component\n    - Verify environment/config propagation\n    - Check state at each layer\n\n- **Trace Data Flow**\n  - Where does bad value originate?\n  - What called this with bad value?\n  - Keep tracing up until you find the source\n  - Fix at source, not at symptom\n\n### Phase 2: Pattern Analysis\n\n**Find the pattern before fixing:**\n\n- **Find Working Examples**\n  - Locate similar working code in same codebase\n  - What works that's similar to what's broken?\n\n- **Compare Against References**\n  - If implementing pattern, read reference implementation COMPLETELY\n  - Don't skim - read every line\n\n- **Identify Differences**\n  - What's different between working and broken?\n  - List every difference, however small\n\n- **Understand Dependencies**\n  - What other components does this need?\n  - What settings, config, environment?\n\n### Phase 3: Hypothesis and Testing\n\n**Scientific method:**\n\n- **Form Single Hypothesis**\n  - State clearly: \"I think X is the root cause because Y\"\n  - Write it down\n  - Be specific, not vague\n\n- **Test Minimally**\n  - Make the SMALLEST possible change to test hypothesis\n  - One variable at a time\n  - Don't fix multiple things at once\n\n- **Verify Before Continuing**\n  - Did it work? Yes → Phase 4\n  - Didn't work? Form NEW hypothesis\n  - DON'T add more fixes on top\n\n### Phase 4: Implementation\n\n**Fix the root cause, not the symptom:**\n\n- **Create Failing Test Case**\n  - Simplest possible reproduction\n  - Automated test if possible\n  - MUST have before fixing\n\n- **Implement Single Fix**\n  - Address the root cause identified\n  - ONE change at a time\n  - No \"while I'm here\" improvements\n\n- **Verify Fix**\n  - Test passes now?\n  - No other tests broken?\n  - Issue actually resolved?\n\n- **If 3+ Fixes Failed: Question Architecture**\n  - Each fix reveals new shared state/coupling/problem in different place\n  - Fixes require \"massive refactoring\" to implement\n  - Each fix creates new symptoms elsewhere\n  - STOP and question fundamentals\n\n## Red Flags - STOP and Follow Process\n\nIf you catch yourself thinking:\n\n- \"Quick fix for now, investigate later\"\n- \"Just try changing X and see if it works\"\n- \"Add multiple changes, run tests\"\n- \"Skip the test, I'll manually verify\"\n- \"It's probably X, let me fix that\"\n- \"I don't fully understand but this might work\"\n- \"One more fix attempt\" (when already tried 2+)\n\n**ALL of these mean: STOP. Return to Phase 1.**\n\n## Quick Reference\n\n| Phase | Key Activities | Success Criteria |\n|-------|---------------|------------------|\n| 1. Root Cause | Read errors, reproduce, check changes, gather evidence | Understand WHAT and WHY |\n| 2. Pattern | Find working examples, compare | Identify differences |\n| 3. Hypothesis | Form theory, test minimally | Confirmed or new hypothesis |\n| 4. Implementation | Create test, fix, verify | Bug resolved, tests pass |\n\n## Common Rationalizations\n\n| Excuse | Reality |\n|--------|---------|\n| \"Issue is simple, don't need process\" | Simple issues have root causes too |\n| \"Emergency, no time for process\" | Systematic debugging is FASTER than thrashing |\n| \"Just try this first, then investigate\" | First fix sets the pattern. Do it right |\n| \"Multiple fixes at once saves time\" | Can't isolate what worked. Causes new bugs |\n\n## Real-World Impact\n\n- Systematic approach: 15-30 minutes to fix\n- Random fixes approach: 2-3 hours of thrashing\n- First-time fix rate: 95% vs 40%\n- New bugs introduced: Near zero vs common\n",
+        "evaluatedContent": "# systematic-debugging\n\nSystematic debugging methodology - Always find root cause before attempting fixes.\n\n## The Iron Law\n\n```\nNO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST\n```\n\nIf you haven't completed Phase 1, you cannot propose fixes.\n\n## When to Use\n\nUse for ANY technical issue:\n\n- Test failures\n- Bugs in production\n- Unexpected behavior\n- Performance problems\n- Build failures\n- Integration issues\n\n**Use this ESPECIALLY when:**\n- Under time pressure (emergencies make guessing tempting)\n- \"Just one quick fix\" seems obvious\n- You've already tried multiple fixes\n- Previous fix didn't work\n- You don't fully understand the issue\n\n## The Four Phases\n\n### Phase 1: Root Cause Investigation\n\n**BEFORE attempting ANY fix:**\n\n- **Read Error Messages Carefully**\n  - Don't skip past errors or warnings\n  - They often contain the exact solution\n  - Read stack traces completely\n  - Note line numbers, file paths, error codes\n\n- **Reproduce Consistently**\n  - Can you trigger it reliably?\n  - What are the exact steps?\n  - Does it happen every time?\n  - If not reproducible → gather more data, don't guess\n\n- **Check Recent Changes**\n  - What changed that could cause this?\n  - Git diff, recent commits\n  - New dependencies, config changes\n  - Environmental differences\n\n- **Gather Evidence in Multi-Component Systems**\n  - For EACH component boundary:\n    - Log what data enters component\n    - Log what data exits component\n    - Verify environment/config propagation\n    - Check state at each layer\n\n- **Trace Data Flow**\n  - Where does bad value originate?\n  - What called this with bad value?\n  - Keep tracing up until you find the source\n  - Fix at source, not at symptom\n\n### Phase 2: Pattern Analysis\n\n**Find the pattern before fixing:**\n\n- **Find Working Examples**\n  - Locate similar working code in same codebase\n  - What works that's similar to what's broken?\n\n- **Compare Against References**\n  - If implementing pattern, read reference implementation COMPLETELY\n  - Don't skim - read every line\n\n- **Identify Differences**\n  - What's different between working and broken?\n  - List every difference, however small\n\n- **Understand Dependencies**\n  - What other components does this need?\n  - What settings, config, environment?\n\n### Phase 3: Hypothesis and Testing\n\n**Scientific method:**\n\n- **Form Single Hypothesis**\n  - State clearly: \"I think X is the root cause because Y\"\n  - Write it down\n  - Be specific, not vague\n\n- **Test Minimally**\n  - Make the SMALLEST possible change to test hypothesis\n  - One variable at a time\n  - Don't fix multiple things at once\n\n- **Verify Before Continuing**\n  - Did it work? Yes → Phase 4\n  - Didn't work? Form NEW hypothesis\n  - DON'T add more fixes on top\n\n### Phase 4: Implementation\n\n**Fix the root cause, not the symptom:**\n\n- **Create Failing Test Case**\n  - Simplest possible reproduction\n  - Automated test if possible\n  - MUST have before fixing\n\n- **Implement Single Fix**\n  - Address the root cause identified\n  - ONE change at a time\n  - No \"while I'm here\" improvements\n\n- **Verify Fix**\n  - Test passes now?\n  - No other tests broken?\n  - Issue actually resolved?\n\n- **If 3+ Fixes Failed: Question Architecture**\n  - Each fix reveals new shared state/coupling/problem in different place\n  - Fixes require \"massive refactoring\" to implement\n  - Each fix creates new symptoms elsewhere\n  - STOP and question fundamentals\n\n## Red Flags - STOP and Follow Process\n\nIf you catch yourself thinking:\n\n- \"Quick fix for now, investigate later\"\n- \"Just try changing X and see if it works\"\n- \"Add multiple changes, run tests\"\n- \"Skip the test, I'll manually verify\"\n- \"It's probably X, let me fix that\"\n- \"I don't fully understand but this might work\"\n- \"One more fix attempt\" (when already tried 2+)\n\n**ALL of these mean: STOP. Return to Phase 1.**\n\n## Quick Reference\n\n| Phase | Key Activities | Success Criteria |\n|-------|---------------|------------------|\n| 1. Root Cause | Read errors, reproduce, check changes, gather evidence | Understand WHAT and WHY |\n| 2. Pattern | Find working examples, compare | Identify differences |\n| 3. Hypothesis | Form theory, test minimally | Confirmed or new hypothesis |\n| 4. Implementation | Create test, fix, verify | Bug resolved, tests pass |\n\n## Common Rationalizations\n\n| Excuse | Reality |\n|--------|---------|\n| \"Issue is simple, don't need process\" | Simple issues have root causes too |\n| \"Emergency, no time for process\" | Systematic debugging is FASTER than thrashing |\n| \"Just try this first, then investigate\" | First fix sets the pattern. Do it right |\n| \"Multiple fixes at once saves time\" | Can't isolate what worked. Causes new bugs |\n\n## Real-World Impact\n\n- Systematic approach: 15-30 minutes to fix\n- Random fixes approach: 2-3 hours of thrashing\n- First-time fix rate: 95% vs 40%\n- New bugs introduced: Near zero vs common\n",
+        "hasRollback": false
+      },
+      "accepted": false
+    },
+    {
+      "round": 1,
+      "result": {
+        "passed": false,
+        "passRate": 0,
+        "score": 0,
+        "results": [
+          {
+            "eval_id": 1,
+            "passed": false,
+            "score": 0,
+            "assertion_results": [
+              {
+                "assertion": "Does NOT propose fixes before root cause investigation",
+                "passed": false,
+                "evidence": "The Skill does not explicitly state that fixes should not be proposed before root cause investigation.",
+                "suggestion": "Add a clear statement emphasizing that fixes should not be proposed without identifying the root cause."
+              },
+              {
+                "assertion": "Mentions reading error messages carefully",
+                "passed": false,
+                "evidence": "The Skill does not mention reading error messages carefully.",
+                "suggestion": "Include a step that instructs the user to read error messages carefully."
+              },
+              {
+                "assertion": "Mentions reproducing the error consistently",
+                "passed": false,
+                "evidence": "The Skill does not mention reproducing the error consistently.",
+                "suggestion": "Add a step that instructs the user to reproduce the error consistently."
+              },
+              {
+                "assertion": "Mentions checking recent changes (git diff)",
+                "passed": false,
+                "evidence": "The Skill does not mention checking recent changes (git diff).",
+                "suggestion": "Include a step that instructs the user to check recent changes using git diff."
+              },
+              {
+                "assertion": "Mentions tracing data flow to find origin",
+                "passed": false,
+                "evidence": "The Skill does not mention tracing data flow to find the origin of the error.",
+                "suggestion": "Add a step that instructs the user to trace data flow to find the origin of the error."
+              },
+              {
+                "assertion": "Follows the Iron Law: NO FIXES WITHOUT ROOT CAUSE",
+                "passed": false,
+                "evidence": "The Skill does not explicitly state the Iron Law.",
+                "suggestion": "Include a clear statement emphasizing the Iron Law: NO FIXES WITHOUT ROOT CAUSE."
+              }
+            ],
+            "overall_feedback": "The Skill does not adequately guide the user through the root cause investigation process before proposing any fixes.",
+            "confidence": 1,
+            "raw": "```json\n{\n  \"eval_id\": 1,\n  \"passed\": false,\n  \"score\": 0.0,\n  \"assertion_results\": [\n    {\n      \"assertion\": \"Does NOT propose fixes before root cause investigation\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly state that fixes should not be proposed before root cause investigation.\",\n      \"suggestion\": \"Add a clear statement emphasizing that fixes should not be proposed without identifying the root cause.\"\n    },\n    {\n      \"assertion\": \"Mentions reading error messages carefully\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention reading error messages carefully.\",\n      \"suggestion\": \"Include a step that instructs the user to read error messages carefully.\"\n    },\n    {\n      \"assertion\": \"Mentions reproducing the error consistently\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention reproducing the error consistently.\",\n      \"suggestion\": \"Add a step that instructs the user to reproduce the error consistently.\"\n    },\n    {\n      \"assertion\": \"Mentions checking recent changes (git diff)\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention checking recent changes (git diff).\",\n      \"suggestion\": \"Include a step that instructs the user to check recent changes using git diff.\"\n    },\n    {\n      \"assertion\": \"Mentions tracing data flow to find origin\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention tracing data flow to find the origin of the error.\",\n      \"suggestion\": \"Add a step that instructs the user to trace data flow to find the origin of the error.\"\n    },\n    {\n      \"assertion\": \"Follows the Iron Law: NO FIXES WITHOUT ROOT CAUSE\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly state the Iron Law.\",\n      \"suggestion\": \"Include a clear statement emphasizing the Iron Law: NO FIXES WITHOUT ROOT CAUSE.\"\n    }\n  ],\n  \"overall_feedback\": \"The Skill does not adequately guide the user through the root cause investigation process before proposing any fixes.\",\n  \"confidence\": 1.0\n}\n```"
+          },
+          {
+            "eval_id": 2,
+            "passed": false,
+            "score": 0,
+            "assertion_results": [
+              {
+                "assertion": "Recognizes '3+ failed fixes' as a red flag",
+                "passed": false,
+                "evidence": "The Skill does not mention recognizing multiple failed fixes as a red flag.",
+                "suggestion": "Add a step to recognize when multiple fixes have failed and flag it as a red flag."
+              },
+              {
+                "assertion": "Returns to Phase 1 (root cause)",
+                "passed": false,
+                "evidence": "The Skill does not mention returning to Phase 1.",
+                "suggestion": "Add a step to return to Phase 1 if multiple fixes have failed."
+              },
+              {
+                "assertion": "Questions architecture if fixes keep failing",
+                "passed": false,
+                "evidence": "The Skill does not mention questioning the architecture if fixes keep failing.",
+                "suggestion": "Add a step to question the architecture if multiple fixes have failed."
+              },
+              {
+                "assertion": "Does NOT suggest another quick fix attempt",
+                "passed": false,
+                "evidence": "The Skill does not mention not suggesting another quick fix attempt.",
+                "suggestion": "Add a step to explicitly state that another quick fix attempt is not suggested."
+              },
+              {
+                "assertion": "Follows scientific method: form hypothesis, test minimally",
+                "passed": false,
+                "evidence": "The Skill does not mention following the scientific method.",
+                "suggestion": "Add a step to form a hypothesis and test minimally."
+              }
+            ],
+            "overall_feedback": "The Skill does not address the key points of recognizing multiple failed fixes, returning to root cause, questioning architecture, not suggesting additional quick fixes, and following the scientific method.",
+            "confidence": 1,
+            "raw": "```json\n{\n  \"eval_id\": 2,\n  \"passed\": false,\n  \"score\": 0.0,\n  \"assertion_results\": [\n    {\n      \"assertion\": \"Recognizes '3+ failed fixes' as a red flag\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention recognizing multiple failed fixes as a red flag.\",\n      \"suggestion\": \"Add a step to recognize when multiple fixes have failed and flag it as a red flag.\"\n    },\n    {\n      \"assertion\": \"Returns to Phase 1 (root cause)\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention returning to Phase 1.\",\n      \"suggestion\": \"Add a step to return to Phase 1 if multiple fixes have failed.\"\n    },\n    {\n      \"assertion\": \"Questions architecture if fixes keep failing\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention questioning the architecture if fixes keep failing.\",\n      \"suggestion\": \"Add a step to question the architecture if multiple fixes have failed.\"\n    },\n    {\n      \"assertion\": \"Does NOT suggest another quick fix attempt\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention not suggesting another quick fix attempt.\",\n      \"suggestion\": \"Add a step to explicitly state that another quick fix attempt is not suggested.\"\n    },\n    {\n      \"assertion\": \"Follows scientific method: form hypothesis, test minimally\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention following the scientific method.\",\n      \"suggestion\": \"Add a step to form a hypothesis and test minimally.\"\n    }\n  ],\n  \"overall_feedback\": \"The Skill does not address the key points of recognizing multiple failed fixes, returning to root cause, questioning architecture, not suggesting additional quick fixes, and following the scientific method.\",\n  \"confidence\": 1.0\n}\n```"
+          },
+          {
+            "eval_id": 3,
+            "passed": false,
+            "score": 0,
+            "assertion_results": [
+              {
+                "assertion": "Gathers evidence at component boundaries",
+                "passed": false,
+                "evidence": "The Skill does not mention gathering evidence at component boundaries.",
+                "suggestion": "Add a step to gather evidence at component boundaries, such as checking logs, configuration files, and dependencies."
+              },
+              {
+                "assertion": "Checks for environmental differences",
+                "passed": false,
+                "evidence": "The Skill does not mention checking for environmental differences.",
+                "suggestion": "Add a step to compare the environment between the working and broken environments, such as Node version, environment variables, and dependencies."
+              },
+              {
+                "assertion": "Mentions checking recent changes",
+                "passed": false,
+                "evidence": "The Skill does not mention checking recent changes.",
+                "suggestion": "Add a step to check recent changes in the CI configuration and codebase."
+              },
+              {
+                "assertion": "Mentions finding working examples for comparison",
+                "passed": false,
+                "evidence": "The Skill does not mention finding working examples for comparison.",
+                "suggestion": "Add a step to find working examples and compare them with the broken environment."
+              },
+              {
+                "assertion": "Follows scientific method: one variable at a time",
+                "passed": false,
+                "evidence": "The Skill does not mention following the scientific method by testing one variable at a time.",
+                "suggestion": "Add a step to isolate and test one variable at a time to identify the root cause."
+              }
+            ],
+            "overall_feedback": "The Skill does not address the key steps required to debug a CI pipeline failure. It lacks specific actions for gathering evidence, checking environmental differences, finding working examples, and following the scientific method.",
+            "confidence": 1,
+            "raw": "```json\n{\n  \"eval_id\": 3,\n  \"passed\": false,\n  \"score\": 0.0,\n  \"assertion_results\": [\n    {\n      \"assertion\": \"Gathers evidence at component boundaries\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention gathering evidence at component boundaries.\",\n      \"suggestion\": \"Add a step to gather evidence at component boundaries, such as checking logs, configuration files, and dependencies.\"\n    },\n    {\n      \"assertion\": \"Checks for environmental differences\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention checking for environmental differences.\",\n      \"suggestion\": \"Add a step to compare the environment between the working and broken environments, such as Node version, environment variables, and dependencies.\"\n    },\n    {\n      \"assertion\": \"Mentions checking recent changes\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention checking recent changes.\",\n      \"suggestion\": \"Add a step to check recent changes in the CI configuration and codebase.\"\n    },\n    {\n      \"assertion\": \"Mentions finding working examples for comparison\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention finding working examples for comparison.\",\n      \"suggestion\": \"Add a step to find working examples and compare them with the broken environment.\"\n    },\n    {\n      \"assertion\": \"Follows scientific method: one variable at a time\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention following the scientific method by testing one variable at a time.\",\n      \"suggestion\": \"Add a step to isolate and test one variable at a time to identify the root cause.\"\n    }\n  ],\n  \"overall_feedback\": \"The Skill does not address the key steps required to debug a CI pipeline failure. It lacks specific actions for gathering evidence, checking environmental differences, finding working examples, and following the scientific method.\",\n  \"confidence\": 1.0\n}\n```"
+          },
+          {
+            "eval_id": 4,
+            "passed": false,
+            "score": 0,
+            "assertion_results": [
+              {
+                "assertion": "Recommends AGAINST quick fixes even under pressure",
+                "passed": false,
+                "evidence": "The Skill does not explicitly recommend against quick fixes under pressure.",
+                "suggestion": "Add a clear statement advising against quick fixes, especially under time pressure."
+              },
+              {
+                "assertion": "Cites the Iron Law: NO FIXES WITHOUT ROOT CAUSE",
+                "passed": false,
+                "evidence": "The Skill does not cite the Iron Law.",
+                "suggestion": "Include a reference to the Iron Law in the Skill content."
+              },
+              {
+                "assertion": "Mentions that emergencies make guessing MORE tempting, not less",
+                "passed": false,
+                "evidence": "The Skill does not mention that emergencies make guessing MORE tempting, not less.",
+                "suggestion": "Add a statement highlighting that emergencies increase the temptation to guess rather than follow a systematic approach."
+              },
+              {
+                "assertion": "References systematic approach being faster than thrashing",
+                "passed": false,
+                "evidence": "The Skill does not reference the faster systematic approach compared to thrashing.",
+                "suggestion": "Include data or statistics showing that the systematic approach is faster (15-30 minutes vs 2-3 hours)."
+              },
+              {
+                "assertion": "Insists on following the 4-phase process",
+                "passed": false,
+                "evidence": "The Skill does not explicitly insist on following the 4-phase process.",
+                "suggestion": "Add a statement emphasizing the importance of following the 4-phase process."
+              }
+            ],
+            "overall_feedback": "The Skill fails to address the key points of the test case, including the importance of systematic debugging, the risks of quick fixes, and the benefits of following the 4-phase process.",
+            "confidence": 1,
+            "raw": "```json\n{\n  \"eval_id\": 4,\n  \"passed\": false,\n  \"score\": 0.0,\n  \"assertion_results\": [\n    {\n      \"assertion\": \"Recommends AGAINST quick fixes even under pressure\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly recommend against quick fixes under pressure.\",\n      \"suggestion\": \"Add a clear statement advising against quick fixes, especially under time pressure.\"\n    },\n    {\n      \"assertion\": \"Cites the Iron Law: NO FIXES WITHOUT ROOT CAUSE\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not cite the Iron Law.\",\n      \"suggestion\": \"Include a reference to the Iron Law in the Skill content.\"\n    },\n    {\n      \"assertion\": \"Mentions that emergencies make guessing MORE tempting, not less\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention that emergencies make guessing MORE tempting, not less.\",\n      \"suggestion\": \"Add a statement highlighting that emergencies increase the temptation to guess rather than follow a systematic approach.\"\n    },\n    {\n      \"assertion\": \"References systematic approach being faster than thrashing\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not reference the faster systematic approach compared to thrashing.\",\n      \"suggestion\": \"Include data or statistics showing that the systematic approach is faster (15-30 minutes vs 2-3 hours).\"\n    },\n    {\n      \"assertion\": \"Insists on following the 4-phase process\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly insist on following the 4-phase process.\",\n      \"suggestion\": \"Add a statement emphasizing the importance of following the 4-phase process.\"\n    }\n  ],\n  \"overall_feedback\": \"The Skill fails to address the key points of the test case, including the importance of systematic debugging, the risks of quick fixes, and the benefits of following the 4-phase process.\",\n  \"confidence\": 1.0\n}\n```"
+          },
+          {
+            "eval_id": 5,
+            "passed": false,
+            "score": 0,
+            "assertion_results": [
+              {
+                "assertion": "Recognizes 'changed loop bounds without investigation' as wrong approach",
+                "passed": false,
+                "evidence": "The Skill does not address this specific scenario or recognize the issue with changing loop bounds without investigation.",
+                "suggestion": "Add a specific assertion or example to handle this scenario and explain why changing loop bounds without investigation is a red flag."
+              },
+              {
+                "assertion": "Returns to Phase 1: read error, reproduce, check changes",
+                "passed": false,
+                "evidence": "The Skill does not explicitly mention returning to Phase 1 or the steps to read the error, reproduce, and check changes.",
+                "suggestion": "Include a clear step-by-step guide for returning to Phase 1 and the specific actions to take."
+              },
+              {
+                "assertion": "Mentions tracing data flow",
+                "passed": false,
+                "evidence": "The Skill does not mention tracing data flow as a step in the debugging process.",
+                "suggestion": "Add a step in the debugging process that includes tracing data flow to help identify the root cause."
+              },
+              {
+                "assertion": "Does NOT suggest more loop changes without root cause",
+                "passed": false,
+                "evidence": "The Skill does not explicitly state that more loop changes should not be suggested without a root cause.",
+                "suggestion": "Include a statement that discourages making further changes without understanding the root cause."
+              },
+              {
+                "assertion": "Follows the hypothesis-and-testing approach",
+                "passed": false,
+                "evidence": "The Skill does not mention forming a hypothesis or testing minimally.",
+                "suggestion": "Include steps for forming a hypothesis and testing minimally to ensure the root cause is identified."
+              }
+            ],
+            "overall_feedback": "The Skill does not address the specific scenario of changing loop bounds without investigation and does not follow the recommended debugging process.",
+            "confidence": 1,
+            "raw": "```json\n{\n  \"eval_id\": 5,\n  \"passed\": false,\n  \"score\": 0.0,\n  \"assertion_results\": [\n    {\n      \"assertion\": \"Recognizes 'changed loop bounds without investigation' as wrong approach\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not address this specific scenario or recognize the issue with changing loop bounds without investigation.\",\n      \"suggestion\": \"Add a specific assertion or example to handle this scenario and explain why changing loop bounds without investigation is a red flag.\"\n    },\n    {\n      \"assertion\": \"Returns to Phase 1: read error, reproduce, check changes\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly mention returning to Phase 1 or the steps to read the error, reproduce, and check changes.\",\n      \"suggestion\": \"Include a clear step-by-step guide for returning to Phase 1 and the specific actions to take.\"\n    },\n    {\n      \"assertion\": \"Mentions tracing data flow\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention tracing data flow as a step in the debugging process.\",\n      \"suggestion\": \"Add a step in the debugging process that includes tracing data flow to help identify the root cause.\"\n    },\n    {\n      \"assertion\": \"Does NOT suggest more loop changes without root cause\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly state that more loop changes should not be suggested without a root cause.\",\n      \"suggestion\": \"Include a statement that discourages making further changes without understanding the root cause.\"\n    },\n    {\n      \"assertion\": \"Follows the hypothesis-and-testing approach\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention forming a hypothesis or testing minimally.\",\n      \"suggestion\": \"Include steps for forming a hypothesis and testing minimally to ensure the root cause is identified.\"\n    }\n  ],\n  \"overall_feedback\": \"The Skill does not address the specific scenario of changing loop bounds without investigation and does not follow the recommended debugging process.\",\n  \"confidence\": 1.0\n}\n```"
+          }
+        ],
+        "failedAssertions": [
+          {
+            "assertion": "Does NOT propose fixes before root cause investigation",
+            "passed": false,
+            "evidence": "The Skill does not explicitly state that fixes should not be proposed before root cause investigation.",
+            "suggestion": "Add a clear statement emphasizing that fixes should not be proposed without identifying the root cause."
+          },
+          {
+            "assertion": "Mentions reading error messages carefully",
+            "passed": false,
+            "evidence": "The Skill does not mention reading error messages carefully.",
+            "suggestion": "Include a step that instructs the user to read error messages carefully."
+          },
+          {
+            "assertion": "Mentions reproducing the error consistently",
+            "passed": false,
+            "evidence": "The Skill does not mention reproducing the error consistently.",
+            "suggestion": "Add a step that instructs the user to reproduce the error consistently."
+          },
+          {
+            "assertion": "Mentions checking recent changes (git diff)",
+            "passed": false,
+            "evidence": "The Skill does not mention checking recent changes (git diff).",
+            "suggestion": "Include a step that instructs the user to check recent changes using git diff."
+          },
+          {
+            "assertion": "Mentions tracing data flow to find origin",
+            "passed": false,
+            "evidence": "The Skill does not mention tracing data flow to find the origin of the error.",
+            "suggestion": "Add a step that instructs the user to trace data flow to find the origin of the error."
+          },
+          {
+            "assertion": "Follows the Iron Law: NO FIXES WITHOUT ROOT CAUSE",
+            "passed": false,
+            "evidence": "The Skill does not explicitly state the Iron Law.",
+            "suggestion": "Include a clear statement emphasizing the Iron Law: NO FIXES WITHOUT ROOT CAUSE."
+          },
+          {
+            "assertion": "Recognizes '3+ failed fixes' as a red flag",
+            "passed": false,
+            "evidence": "The Skill does not mention recognizing multiple failed fixes as a red flag.",
+            "suggestion": "Add a step to recognize when multiple fixes have failed and flag it as a red flag."
+          },
+          {
+            "assertion": "Returns to Phase 1 (root cause)",
+            "passed": false,
+            "evidence": "The Skill does not mention returning to Phase 1.",
+            "suggestion": "Add a step to return to Phase 1 if multiple fixes have failed."
+          },
+          {
+            "assertion": "Questions architecture if fixes keep failing",
+            "passed": false,
+            "evidence": "The Skill does not mention questioning the architecture if fixes keep failing.",
+            "suggestion": "Add a step to question the architecture if multiple fixes have failed."
+          },
+          {
+            "assertion": "Does NOT suggest another quick fix attempt",
+            "passed": false,
+            "evidence": "The Skill does not mention not suggesting another quick fix attempt.",
+            "suggestion": "Add a step to explicitly state that another quick fix attempt is not suggested."
+          },
+          {
+            "assertion": "Follows scientific method: form hypothesis, test minimally",
+            "passed": false,
+            "evidence": "The Skill does not mention following the scientific method.",
+            "suggestion": "Add a step to form a hypothesis and test minimally."
+          },
+          {
+            "assertion": "Gathers evidence at component boundaries",
+            "passed": false,
+            "evidence": "The Skill does not mention gathering evidence at component boundaries.",
+            "suggestion": "Add a step to gather evidence at component boundaries, such as checking logs, configuration files, and dependencies."
+          },
+          {
+            "assertion": "Checks for environmental differences",
+            "passed": false,
+            "evidence": "The Skill does not mention checking for environmental differences.",
+            "suggestion": "Add a step to compare the environment between the working and broken environments, such as Node version, environment variables, and dependencies."
+          },
+          {
+            "assertion": "Mentions checking recent changes",
+            "passed": false,
+            "evidence": "The Skill does not mention checking recent changes.",
+            "suggestion": "Add a step to check recent changes in the CI configuration and codebase."
+          },
+          {
+            "assertion": "Mentions finding working examples for comparison",
+            "passed": false,
+            "evidence": "The Skill does not mention finding working examples for comparison.",
+            "suggestion": "Add a step to find working examples and compare them with the broken environment."
+          },
+          {
+            "assertion": "Follows scientific method: one variable at a time",
+            "passed": false,
+            "evidence": "The Skill does not mention following the scientific method by testing one variable at a time.",
+            "suggestion": "Add a step to isolate and test one variable at a time to identify the root cause."
+          },
+          {
+            "assertion": "Recommends AGAINST quick fixes even under pressure",
+            "passed": false,
+            "evidence": "The Skill does not explicitly recommend against quick fixes under pressure.",
+            "suggestion": "Add a clear statement advising against quick fixes, especially under time pressure."
+          },
+          {
+            "assertion": "Cites the Iron Law: NO FIXES WITHOUT ROOT CAUSE",
+            "passed": false,
+            "evidence": "The Skill does not cite the Iron Law.",
+            "suggestion": "Include a reference to the Iron Law in the Skill content."
+          },
+          {
+            "assertion": "Mentions that emergencies make guessing MORE tempting, not less",
+            "passed": false,
+            "evidence": "The Skill does not mention that emergencies make guessing MORE tempting, not less.",
+            "suggestion": "Add a statement highlighting that emergencies increase the temptation to guess rather than follow a systematic approach."
+          },
+          {
+            "assertion": "References systematic approach being faster than thrashing",
+            "passed": false,
+            "evidence": "The Skill does not reference the faster systematic approach compared to thrashing.",
+            "suggestion": "Include data or statistics showing that the systematic approach is faster (15-30 minutes vs 2-3 hours)."
+          },
+          {
+            "assertion": "Insists on following the 4-phase process",
+            "passed": false,
+            "evidence": "The Skill does not explicitly insist on following the 4-phase process.",
+            "suggestion": "Add a statement emphasizing the importance of following the 4-phase process."
+          },
+          {
+            "assertion": "Recognizes 'changed loop bounds without investigation' as wrong approach",
+            "passed": false,
+            "evidence": "The Skill does not address this specific scenario or recognize the issue with changing loop bounds without investigation.",
+            "suggestion": "Add a specific assertion or example to handle this scenario and explain why changing loop bounds without investigation is a red flag."
+          },
+          {
+            "assertion": "Returns to Phase 1: read error, reproduce, check changes",
+            "passed": false,
+            "evidence": "The Skill does not explicitly mention returning to Phase 1 or the steps to read the error, reproduce, and check changes.",
+            "suggestion": "Include a clear step-by-step guide for returning to Phase 1 and the specific actions to take."
+          },
+          {
+            "assertion": "Mentions tracing data flow",
+            "passed": false,
+            "evidence": "The Skill does not mention tracing data flow as a step in the debugging process.",
+            "suggestion": "Add a step in the debugging process that includes tracing data flow to help identify the root cause."
+          },
+          {
+            "assertion": "Does NOT suggest more loop changes without root cause",
+            "passed": false,
+            "evidence": "The Skill does not explicitly state that more loop changes should not be suggested without a root cause.",
+            "suggestion": "Include a statement that discourages making further changes without understanding the root cause."
+          },
+          {
+            "assertion": "Follows the hypothesis-and-testing approach",
+            "passed": false,
+            "evidence": "The Skill does not mention forming a hypothesis or testing minimally.",
+            "suggestion": "Include steps for forming a hypothesis and testing minimally to ensure the root cause is identified."
+          }
+        ],
+        "overall_feedback": "Failed 5/5 test cases:\n- Does NOT propose fixes before root cause investigation: Add a clear statement emphasizing that fixes should not be proposed without identifying the root cause.\n- Mentions reading error messages carefully: Include a step that instructs the user to read error messages carefully.\n- Mentions reproducing the error consistently: Add a step that instructs the user to reproduce the error consistently.",
+        "confidence": 1,
+        "improvedContent": null,
+        "dominated": false,
+        "hasRollback": false
+      },
+      "accepted": false
+    },
+    {
+      "round": 2,
+      "result": {
+        "passed": false,
+        "passRate": 0,
+        "score": 0.12000000000000002,
+        "results": [
+          {
+            "eval_id": 1,
+            "passed": false,
+            "score": 0,
+            "assertion_results": [
+              {
+                "assertion": "Does NOT propose fixes before root cause investigation",
+                "passed": false,
+                "evidence": "The Skill does not explicitly state that fixes should not be proposed before root cause investigation.",
+                "suggestion": "Add a clear statement emphasizing that fixes should not be proposed without identifying the root cause."
+              },
+              {
+                "assertion": "Mentions reading error messages carefully",
+                "passed": true,
+                "evidence": "The Skill mentions 'Read errors, reproduce, check changes, gather evidence', which implies careful reading of error messages.",
+                "suggestion": "No action needed."
+              },
+              {
+                "assertion": "Mentions reproducing the error consistently",
+                "passed": true,
+                "evidence": "The Skill mentions 'Read errors, reproduce, check changes, gather evidence', which implies reproducing the error consistently.",
+                "suggestion": "No action needed."
+              },
+              {
+                "assertion": "Mentions checking recent changes (git diff)",
+                "passed": false,
+                "evidence": "The Skill does not mention checking recent changes using git diff.",
+                "suggestion": "Add a step to mention checking recent changes using git diff."
+              },
+              {
+                "assertion": "Mentions tracing data flow to find origin",
+                "passed": false,
+                "evidence": "The Skill does not mention tracing data flow to find the origin of the error.",
+                "suggestion": "Add a step to mention tracing data flow to find the origin of the error."
+              },
+              {
+                "assertion": "Follows the Iron Law: NO FIXES WITHOUT ROOT CAUSE",
+                "passed": false,
+                "evidence": "The Skill does not explicitly state that fixes should not be proposed without identifying the root cause.",
+                "suggestion": "Add a clear statement emphasizing that fixes should not be proposed without identifying the root cause."
+              }
+            ],
+            "overall_feedback": "The Skill does not fully follow the test case requirements, particularly in terms of not proposing fixes before root cause investigation and including steps for checking recent changes and tracing data flow.",
+            "confidence": 0.8,
+            "raw": "```json\n{\n  \"eval_id\": 1,\n  \"passed\": false,\n  \"score\": 0.0,\n  \"assertion_results\": [\n    {\n      \"assertion\": \"Does NOT propose fixes before root cause investigation\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly state that fixes should not be proposed before root cause investigation.\",\n      \"suggestion\": \"Add a clear statement emphasizing that fixes should not be proposed without identifying the root cause.\"\n    },\n    {\n      \"assertion\": \"Mentions reading error messages carefully\",\n      \"passed\": true,\n      \"evidence\": \"The Skill mentions 'Read errors, reproduce, check changes, gather evidence', which implies careful reading of error messages.\",\n      \"suggestion\": \"No action needed.\"\n    },\n    {\n      \"assertion\": \"Mentions reproducing the error consistently\",\n      \"passed\": true,\n      \"evidence\": \"The Skill mentions 'Read errors, reproduce, check changes, gather evidence', which implies reproducing the error consistently.\",\n      \"suggestion\": \"No action needed.\"\n    },\n    {\n      \"assertion\": \"Mentions checking recent changes (git diff)\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention checking recent changes using git diff.\",\n      \"suggestion\": \"Add a step to mention checking recent changes using git diff.\"\n    },\n    {\n      \"assertion\": \"Mentions tracing data flow to find origin\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention tracing data flow to find the origin of the error.\",\n      \"suggestion\": \"Add a step to mention tracing data flow to find the origin of the error.\"\n    },\n    {\n      \"assertion\": \"Follows the Iron Law: NO FIXES WITHOUT ROOT CAUSE\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly state that fixes should not be proposed without identifying the root cause.\",\n      \"suggestion\": \"Add a clear statement emphasizing that fixes should not be proposed without identifying the root cause.\"\n    }\n  ],\n  \"overall_feedback\": \"The Skill does not fully follow the test case requirements, particularly in terms of not proposing fixes before root cause investigation and including steps for checking recent changes and tracing data flow.\",\n  \"confidence\": 0.8\n}\n```"
+          },
+          {
+            "eval_id": 2,
+            "passed": false,
+            "score": 0.2,
+            "assertion_results": [
+              {
+                "assertion": "Recognizes '3+ failed fixes' as a red flag",
+                "passed": false,
+                "evidence": "The Skill does not mention recognizing multiple failed fixes as a red flag.",
+                "suggestion": "Add a step to recognize when multiple fixes have failed and flag it as a red flag."
+              },
+              {
+                "assertion": "Returns to Phase 1 (root cause)",
+                "passed": false,
+                "evidence": "The Skill does not mention returning to Phase 1.",
+                "suggestion": "Add a step to return to Phase 1 if multiple fixes have failed."
+              },
+              {
+                "assertion": "Questions architecture if fixes keep failing",
+                "passed": false,
+                "evidence": "The Skill does not mention questioning the architecture if fixes keep failing.",
+                "suggestion": "Add a step to question the architecture if multiple fixes have failed."
+              },
+              {
+                "assertion": "Does NOT suggest another quick fix attempt",
+                "passed": false,
+                "evidence": "The Skill does not explicitly state that another quick fix attempt should not be suggested.",
+                "suggestion": "Add a step to explicitly state that another quick fix attempt should not be suggested if multiple fixes have failed."
+              },
+              {
+                "assertion": "Follows scientific method: form hypothesis, test minimally",
+                "passed": true,
+                "evidence": "The Skill mentions forming a hypothesis and testing minimally, which aligns with the scientific method.",
+                "suggestion": "No changes needed."
+              }
+            ],
+            "overall_feedback": "The Skill does not handle the scenario of multiple failed fixes correctly. It lacks steps to recognize the red flag, return to Phase 1, question the architecture, and avoid further quick fix attempts.",
+            "confidence": 0.8,
+            "raw": "```json\n{\n  \"eval_id\": 2,\n  \"passed\": false,\n  \"score\": 0.2,\n  \"assertion_results\": [\n    {\n      \"assertion\": \"Recognizes '3+ failed fixes' as a red flag\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention recognizing multiple failed fixes as a red flag.\",\n      \"suggestion\": \"Add a step to recognize when multiple fixes have failed and flag it as a red flag.\"\n    },\n    {\n      \"assertion\": \"Returns to Phase 1 (root cause)\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention returning to Phase 1.\",\n      \"suggestion\": \"Add a step to return to Phase 1 if multiple fixes have failed.\"\n    },\n    {\n      \"assertion\": \"Questions architecture if fixes keep failing\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention questioning the architecture if fixes keep failing.\",\n      \"suggestion\": \"Add a step to question the architecture if multiple fixes have failed.\"\n    },\n    {\n      \"assertion\": \"Does NOT suggest another quick fix attempt\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly state that another quick fix attempt should not be suggested.\",\n      \"suggestion\": \"Add a step to explicitly state that another quick fix attempt should not be suggested if multiple fixes have failed.\"\n    },\n    {\n      \"assertion\": \"Follows scientific method: form hypothesis, test minimally\",\n      \"passed\": true,\n      \"evidence\": \"The Skill mentions forming a hypothesis and testing minimally, which aligns with the scientific method.\",\n      \"suggestion\": \"No changes needed.\"\n    }\n  ],\n  \"overall_feedback\": \"The Skill does not handle the scenario of multiple failed fixes correctly. It lacks steps to recognize the red flag, return to Phase 1, question the architecture, and avoid further quick fix attempts.\",\n  \"confidence\": 0.8\n}\n```"
+          },
+          {
+            "eval_id": 3,
+            "passed": false,
+            "score": 0.2,
+            "assertion_results": [
+              {
+                "assertion": "Gathers evidence at component boundaries",
+                "passed": false,
+                "evidence": "The Skill does not mention gathering evidence at component boundaries.",
+                "suggestion": "Add a step to gather evidence at component boundaries, such as checking logs, configuration files, and dependencies."
+              },
+              {
+                "assertion": "Checks for environmental differences",
+                "passed": false,
+                "evidence": "The Skill does not mention checking for environmental differences.",
+                "suggestion": "Add a step to compare the environment between the working and broken environments, such as Node version, environment variables, and dependencies."
+              },
+              {
+                "assertion": "Mentions checking recent changes",
+                "passed": false,
+                "evidence": "The Skill does not mention checking recent changes.",
+                "suggestion": "Add a step to check recent changes in the CI configuration and codebase."
+              },
+              {
+                "assertion": "Mentions finding working examples for comparison",
+                "passed": false,
+                "evidence": "The Skill does not mention finding working examples for comparison.",
+                "suggestion": "Add a step to find working examples and compare them with the broken environment."
+              },
+              {
+                "assertion": "Follows scientific method: one variable at a time",
+                "passed": false,
+                "evidence": "The Skill does not mention following the scientific method by testing one variable at a time.",
+                "suggestion": "Add a step to isolate and test one variable at a time to identify the root cause."
+              }
+            ],
+            "overall_feedback": "The Skill does not address the key steps required to debug a CI pipeline failure. It lacks specific guidance on gathering evidence, checking environmental differences, finding working examples, and following the scientific method.",
+            "confidence": 0.8,
+            "raw": "```json\n{\n  \"eval_id\": 3,\n  \"passed\": false,\n  \"score\": 0.2,\n  \"assertion_results\": [\n    {\n      \"assertion\": \"Gathers evidence at component boundaries\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention gathering evidence at component boundaries.\",\n      \"suggestion\": \"Add a step to gather evidence at component boundaries, such as checking logs, configuration files, and dependencies.\"\n    },\n    {\n      \"assertion\": \"Checks for environmental differences\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention checking for environmental differences.\",\n      \"suggestion\": \"Add a step to compare the environment between the working and broken environments, such as Node version, environment variables, and dependencies.\"\n    },\n    {\n      \"assertion\": \"Mentions checking recent changes\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention checking recent changes.\",\n      \"suggestion\": \"Add a step to check recent changes in the CI configuration and codebase.\"\n    },\n    {\n      \"assertion\": \"Mentions finding working examples for comparison\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention finding working examples for comparison.\",\n      \"suggestion\": \"Add a step to find working examples and compare them with the broken environment.\"\n    },\n    {\n      \"assertion\": \"Follows scientific method: one variable at a time\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention following the scientific method by testing one variable at a time.\",\n      \"suggestion\": \"Add a step to isolate and test one variable at a time to identify the root cause.\"\n    }\n  ],\n  \"overall_feedback\": \"The Skill does not address the key steps required to debug a CI pipeline failure. It lacks specific guidance on gathering evidence, checking environmental differences, finding working examples, and following the scientific method.\",\n  \"confidence\": 0.8\n}\n```"
+          },
+          {
+            "eval_id": 4,
+            "passed": false,
+            "score": 0.2,
+            "assertion_results": [
+              {
+                "assertion": "Recommends AGAINST quick fixes even under pressure",
+                "passed": false,
+                "evidence": "The Skill does not explicitly recommend against quick fixes under pressure.",
+                "suggestion": "Add a clear statement advising against quick fixes, especially under time pressure."
+              },
+              {
+                "assertion": "Cites the Iron Law: NO FIXES WITHOUT ROOT CAUSE",
+                "passed": false,
+                "evidence": "The Skill does not cite the Iron Law.",
+                "suggestion": "Include a reference to the Iron Law in the Skill content."
+              },
+              {
+                "assertion": "Mentions that emergencies make guessing MORE tempting, not less",
+                "passed": false,
+                "evidence": "The Skill does not mention that emergencies make guessing MORE tempting, not less.",
+                "suggestion": "Add a statement addressing how emergencies can lead to more guessing rather than less."
+              },
+              {
+                "assertion": "References systematic approach being faster than thrashing",
+                "passed": true,
+                "evidence": "The Skill mentions that systematic approach is FASTER (15-30 min vs 2-3 hours).",
+                "suggestion": "No action needed."
+              },
+              {
+                "assertion": "Insists on following the 4-phase process",
+                "passed": false,
+                "evidence": "The Skill does not explicitly insist on following the 4-phase process.",
+                "suggestion": "Add a statement emphasizing the importance of following the 4-phase process."
+              }
+            ],
+            "overall_feedback": "The Skill does not sufficiently address the need to avoid quick fixes, cite the Iron Law, and emphasize the importance of following the 4-phase process.",
+            "confidence": 0.8,
+            "raw": "```json\n{\n  \"eval_id\": 4,\n  \"passed\": false,\n  \"score\": 0.2,\n  \"assertion_results\": [\n    {\n      \"assertion\": \"Recommends AGAINST quick fixes even under pressure\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly recommend against quick fixes under pressure.\",\n      \"suggestion\": \"Add a clear statement advising against quick fixes, especially under time pressure.\"\n    },\n    {\n      \"assertion\": \"Cites the Iron Law: NO FIXES WITHOUT ROOT CAUSE\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not cite the Iron Law.\",\n      \"suggestion\": \"Include a reference to the Iron Law in the Skill content.\"\n    },\n    {\n      \"assertion\": \"Mentions that emergencies make guessing MORE tempting, not less\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention that emergencies make guessing MORE tempting, not less.\",\n      \"suggestion\": \"Add a statement addressing how emergencies can lead to more guessing rather than less.\"\n    },\n    {\n      \"assertion\": \"References systematic approach being faster than thrashing\",\n      \"passed\": true,\n      \"evidence\": \"The Skill mentions that systematic approach is FASTER (15-30 min vs 2-3 hours).\",\n      \"suggestion\": \"No action needed.\"\n    },\n    {\n      \"assertion\": \"Insists on following the 4-phase process\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly insist on following the 4-phase process.\",\n      \"suggestion\": \"Add a statement emphasizing the importance of following the 4-phase process.\"\n    }\n  ],\n  \"overall_feedback\": \"The Skill does not sufficiently address the need to avoid quick fixes, cite the Iron Law, and emphasize the importance of following the 4-phase process.\",\n  \"confidence\": 0.8\n}\n```"
+          },
+          {
+            "eval_id": 5,
+            "passed": false,
+            "score": 0,
+            "assertion_results": [
+              {
+                "assertion": "Recognizes 'changed loop bounds without investigation' as wrong approach",
+                "passed": false,
+                "evidence": "The Skill does not address this specific scenario or recognize the issue with changing loop bounds without investigation.",
+                "suggestion": "Add a specific assertion or example to handle this scenario and explain why changing loop bounds without investigation is a red flag."
+              },
+              {
+                "assertion": "Returns to Phase 1: read error, reproduce, check changes",
+                "passed": false,
+                "evidence": "The Skill does not explicitly mention returning to Phase 1 or the steps to read the error, reproduce, and check changes.",
+                "suggestion": "Include a clear step-by-step guide for returning to Phase 1 and the specific actions to take."
+              },
+              {
+                "assertion": "Mentions tracing data flow",
+                "passed": false,
+                "evidence": "The Skill does not mention tracing data flow as a step in the process.",
+                "suggestion": "Add a step in the process that includes tracing data flow to identify the root cause."
+              },
+              {
+                "assertion": "Does NOT suggest more loop changes without root cause",
+                "passed": false,
+                "evidence": "The Skill does not explicitly prevent suggesting more loop changes without understanding the root cause.",
+                "suggestion": "Include a step that explicitly states not to suggest further changes without identifying the root cause."
+              },
+              {
+                "assertion": "Follows the hypothesis-and-testing approach",
+                "passed": false,
+                "evidence": "The Skill does not mention forming a hypothesis and testing minimally.",
+                "suggestion": "Include a step that involves forming a hypothesis and testing minimally to confirm or refine the hypothesis."
+              }
+            ],
+            "overall_feedback": "The Skill does not address the specific scenario of changing loop bounds without investigation and does not follow the recommended steps for debugging.",
+            "confidence": 1,
+            "raw": "```json\n{\n  \"eval_id\": 5,\n  \"passed\": false,\n  \"score\": 0.0,\n  \"assertion_results\": [\n    {\n      \"assertion\": \"Recognizes 'changed loop bounds without investigation' as wrong approach\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not address this specific scenario or recognize the issue with changing loop bounds without investigation.\",\n      \"suggestion\": \"Add a specific assertion or example to handle this scenario and explain why changing loop bounds without investigation is a red flag.\"\n    },\n    {\n      \"assertion\": \"Returns to Phase 1: read error, reproduce, check changes\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly mention returning to Phase 1 or the steps to read the error, reproduce, and check changes.\",\n      \"suggestion\": \"Include a clear step-by-step guide for returning to Phase 1 and the specific actions to take.\"\n    },\n    {\n      \"assertion\": \"Mentions tracing data flow\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention tracing data flow as a step in the process.\",\n      \"suggestion\": \"Add a step in the process that includes tracing data flow to identify the root cause.\"\n    },\n    {\n      \"assertion\": \"Does NOT suggest more loop changes without root cause\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not explicitly prevent suggesting more loop changes without understanding the root cause.\",\n      \"suggestion\": \"Include a step that explicitly states not to suggest further changes without identifying the root cause.\"\n    },\n    {\n      \"assertion\": \"Follows the hypothesis-and-testing approach\",\n      \"passed\": false,\n      \"evidence\": \"The Skill does not mention forming a hypothesis and testing minimally.\",\n      \"suggestion\": \"Include a step that involves forming a hypothesis and testing minimally to confirm or refine the hypothesis.\"\n    }\n  ],\n  \"overall_feedback\": \"The Skill does not address the specific scenario of changing loop bounds without investigation and does not follow the recommended steps for debugging.\",\n  \"confidence\": 1.0\n}\n```"
+          }
+        ],
+        "failedAssertions": [
+          {
+            "assertion": "Does NOT propose fixes before root cause investigation",
+            "passed": false,
+            "evidence": "The Skill does not explicitly state that fixes should not be proposed before root cause investigation.",
+            "suggestion": "Add a clear statement emphasizing that fixes should not be proposed without identifying the root cause."
+          },
+          {
+            "assertion": "Mentions checking recent changes (git diff)",
+            "passed": false,
+            "evidence": "The Skill does not mention checking recent changes using git diff.",
+            "suggestion": "Add a step to mention checking recent changes using git diff."
+          },
+          {
+            "assertion": "Mentions tracing data flow to find origin",
+            "passed": false,
+            "evidence": "The Skill does not mention tracing data flow to find the origin of the error.",
+            "suggestion": "Add a step to mention tracing data flow to find the origin of the error."
+          },
+          {
+            "assertion": "Follows the Iron Law: NO FIXES WITHOUT ROOT CAUSE",
+            "passed": false,
+            "evidence": "The Skill does not explicitly state that fixes should not be proposed without identifying the root cause.",
+            "suggestion": "Add a clear statement emphasizing that fixes should not be proposed without identifying the root cause."
+          },
+          {
+            "assertion": "Recognizes '3+ failed fixes' as a red flag",
+            "passed": false,
+            "evidence": "The Skill does not mention recognizing multiple failed fixes as a red flag.",
+            "suggestion": "Add a step to recognize when multiple fixes have failed and flag it as a red flag."
+          },
+          {
+            "assertion": "Returns to Phase 1 (root cause)",
+            "passed": false,
+            "evidence": "The Skill does not mention returning to Phase 1.",
+            "suggestion": "Add a step to return to Phase 1 if multiple fixes have failed."
+          },
+          {
+            "assertion": "Questions architecture if fixes keep failing",
+            "passed": false,
+            "evidence": "The Skill does not mention questioning the architecture if fixes keep failing.",
+            "suggestion": "Add a step to question the architecture if multiple fixes have failed."
+          },
+          {
+            "assertion": "Does NOT suggest another quick fix attempt",
+            "passed": false,
+            "evidence": "The Skill does not explicitly state that another quick fix attempt should not be suggested.",
+            "suggestion": "Add a step to explicitly state that another quick fix attempt should not be suggested if multiple fixes have failed."
+          },
+          {
+            "assertion": "Gathers evidence at component boundaries",
+            "passed": false,
+            "evidence": "The Skill does not mention gathering evidence at component boundaries.",
+            "suggestion": "Add a step to gather evidence at component boundaries, such as checking logs, configuration files, and dependencies."
+          },
+          {
+            "assertion": "Checks for environmental differences",
+            "passed": false,
+            "evidence": "The Skill does not mention checking for environmental differences.",
+            "suggestion": "Add a step to compare the environment between the working and broken environments, such as Node version, environment variables, and dependencies."
+          },
+          {
+            "assertion": "Mentions checking recent changes",
+            "passed": false,
+            "evidence": "The Skill does not mention checking recent changes.",
+            "suggestion": "Add a step to check recent changes in the CI configuration and codebase."
+          },
+          {
+            "assertion": "Mentions finding working examples for comparison",
+            "passed": false,
+            "evidence": "The Skill does not mention finding working examples for comparison.",
+            "suggestion": "Add a step to find working examples and compare them with the broken environment."
+          },
+          {
+            "assertion": "Follows scientific method: one variable at a time",
+            "passed": false,
+            "evidence": "The Skill does not mention following the scientific method by testing one variable at a time.",
+            "suggestion": "Add a step to isolate and test one variable at a time to identify the root cause."
+          },
+          {
+            "assertion": "Recommends AGAINST quick fixes even under pressure",
+            "passed": false,
+            "evidence": "The Skill does not explicitly recommend against quick fixes under pressure.",
+            "suggestion": "Add a clear statement advising against quick fixes, especially under time pressure."
+          },
+          {
+            "assertion": "Cites the Iron Law: NO FIXES WITHOUT ROOT CAUSE",
+            "passed": false,
+            "evidence": "The Skill does not cite the Iron Law.",
+            "suggestion": "Include a reference to the Iron Law in the Skill content."
+          },
+          {
+            "assertion": "Mentions that emergencies make guessing MORE tempting, not less",
+            "passed": false,
+            "evidence": "The Skill does not mention that emergencies make guessing MORE tempting, not less.",
+            "suggestion": "Add a statement addressing how emergencies can lead to more guessing rather than less."
+          },
+          {
+            "assertion": "Insists on following the 4-phase process",
+            "passed": false,
+            "evidence": "The Skill does not explicitly insist on following the 4-phase process.",
+            "suggestion": "Add a statement emphasizing the importance of following the 4-phase process."
+          },
+          {
+            "assertion": "Recognizes 'changed loop bounds without investigation' as wrong approach",
+            "passed": false,
+            "evidence": "The Skill does not address this specific scenario or recognize the issue with changing loop bounds without investigation.",
+            "suggestion": "Add a specific assertion or example to handle this scenario and explain why changing loop bounds without investigation is a red flag."
+          },
+          {
+            "assertion": "Returns to Phase 1: read error, reproduce, check changes",
+            "passed": false,
+            "evidence": "The Skill does not explicitly mention returning to Phase 1 or the steps to read the error, reproduce, and check changes.",
+            "suggestion": "Include a clear step-by-step guide for returning to Phase 1 and the specific actions to take."
+          },
+          {
+            "assertion": "Mentions tracing data flow",
+            "passed": false,
+            "evidence": "The Skill does not mention tracing data flow as a step in the process.",
+            "suggestion": "Add a step in the process that includes tracing data flow to identify the root cause."
+          },
+          {
+            "assertion": "Does NOT suggest more loop changes without root cause",
+            "passed": false,
+            "evidence": "The Skill does not explicitly prevent suggesting more loop changes without understanding the root cause.",
+            "suggestion": "Include a step that explicitly states not to suggest further changes without identifying the root cause."
+          },
+          {
+            "assertion": "Follows the hypothesis-and-testing approach",
+            "passed": false,
+            "evidence": "The Skill does not mention forming a hypothesis and testing minimally.",
+            "suggestion": "Include a step that involves forming a hypothesis and testing minimally to confirm or refine the hypothesis."
+          }
+        ],
+        "overall_feedback": "Failed 5/5 test cases:\n- Does NOT propose fixes before root cause investigation: Add a clear statement emphasizing that fixes should not be proposed without identifying the root cause.\n- Mentions checking recent changes (git diff): Add a step to mention checking recent changes using git diff.\n- Mentions tracing data flow to find origin: Add a step to mention tracing data flow to find the origin of the error.",
+        "confidence": 1,
+        "dominated": true,
+        "improvedContent": null,
+        "hasRollback": false
+      },
+      "accepted": false
+    }
+  ],
+  "feedback": [],
+  "rounds": 0,
+  "pareto": []
+}

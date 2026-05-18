@@ -1,0 +1,32 @@
+{
+  "name": "skill-evolver",
+  "version": "1.0.0",
+  "description": "Skill Self-Verification & Auto-Evolution Framework based on EvoSkills/EvoSkill papers",
+  "main": "src/index.js",
+  "bin": {
+    "skill-evolver": "src/cli.js"
+  },
+  "scripts": {
+    "evolve": "node src/cli.js evolve",
+    "verify": "node src/cli.js verify",
+    "verify-all": "node src/cli.js verify-all",
+    "status": "node src/cli.js status",
+    "discover": "node src/cli.js discover",
+    "cross-test": "node src/cli.js cross-test"
+  },
+  "keywords": [
+    "skill",
+    "evolution",
+    "ai-agent",
+    "self-improvement",
+    "evals"
+  ],
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "glob": "^10.5.0",
+    "sql.js": "^1.14.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,32 +1,122 @@
 ---
 name: humanizer
 description: |
-  Text humanization and natural language refinement.
+  老年健康短视频文稿去AI味。将改写稿调整为"从医多年视角、口语化、温暖陪伴感、一句一行、无人名、无AI味"的成稿风格，适配50岁以上中老年目标人群的视频号/抖音/快手口播。
 metadata:
   openclaw:
     emoji: 🎭
   security: {}
 ---
 
-# humanizer
+# Humanizer — 老年健康文稿风格
 
-Text humanization skill for natural, conversational output. Use when generated text sounds robotic, overly formal, or unnatural.
+用于老年健康赛道短视频文稿的去AI味处理。输入为改写稿，输出为符合口播要求的成稿。
 
-## Trigger Conditions
+## 风格锚点
 
-- AI-generated text needs a more natural, human tone
-- Communications to end users require warmth and personality
-- Technical explanations need to be accessible to non-technical audiences
-- Draft text feels stiff, repetitive, or mechanical
+- **视角**：从医多年，像老医生/老专家跟老朋友聊天
+- **语气**：温暖陪伴，关心但不煽情
+- **句式**：一句一行，每句独立成段，适合口播
+- **人称**：不用具体人名，用"我"、"你"、"大家"
+- **AI味**：零容忍
 
-## Usage
+## 成稿格式
 
-1. Read the original text and identify robotic patterns (repetitive sentence structures, unnatural word choices, excessive formality)
-2. Apply humanization techniques — vary sentence length, use contractions, add conversational transitions, include natural pauses
-3. Preserve factual accuracy and completeness
-4. Adapt tone to the target audience (professional, friendly, authoritative, etc.)
-5. Review for consistency and flow
+```
+原稿（段落式文本）
+↓
+一句一行输出，每行末尾不带标点（问号/叹号保留）
+行与行之间空行，便于口播标注
+```
 
-## Requirements
+## 要砍掉的 AI 味
 
-No special environment variables required.
+### 模板化用语
+- ~~首先 / 其次 / 最后~~ → 直接说，不用衔接词
+- ~~需要注意的是~~ → `大家要记住`
+- ~~如果您有任何问题~~ → `有问题问医生`
+- ~~当然 / 毫无疑问~~ → 删
+- ~~综上所述 / 总的来说~~ → 删
+- ~~在...方面~~ → 删
+- ~~值得强调的是~~ → 删
+- ~~因此 / 所以~~ → 能省则省
+
+### 书面表达 → 口语化
+- ~~是否~~ → `有没有`
+- ~~即可~~ → `就行`
+- ~~此~~ → `这`
+- ~~但~~ → `不过`
+- ~~例如 / 比如~~ → `打个比方`
+- ~~导致~~ → `引起`
+- ~~具有~~ → `有`
+- ~~较为~~ → `比较`
+- ~~然而~~ → `可是`
+- ~~此外~~ → `还有`
+- ~~关于~~ → `说到`
+- ~~均~~ → `都`
+- ~~若 / 如~~ → `如果`
+
+### 机械句式
+- 连续 1. 2. 3. 序号列表 → 每句独立成行，不要序号
+- 每段开头同一结构重复 → 换说法
+- 一句话超过 20 个字 → 拆成两句
+- 被动语态 → 改主动
+- 长定语从句 → 拆成短句
+
+### 数据表达
+- `30%的患者` → `10个人里就有3个`
+- `发病率较高` → `得这个病的人不少`
+- `5年生存率` → `能活过5年的比例`
+- 学术百分比 → 换成"每10个人里有X个"的说法
+
+## 温暖陪伴感技巧
+
+- **设问开头**：`你有没有遇到过这种情况？`
+- **共情句**：`我知道这很难受` / `我懂你的心情`
+- **提醒句**：`千万别这么做` / `这件事很重要`
+- **收尾**：`为了你的健康` / `记得照顾好自己`
+- 不用煽情，真诚比技巧重要
+
+## 示例
+
+### 输入
+高血压患者需要注意饮食控制，首先减少盐分摄入，每日不超过5克。其次要定期监测血压。此外还需要适量运动。
+
+### 输出
+说到高血压
+饮食上要特别注意
+
+盐一定不能多吃
+每天别超过一个啤酒瓶盖的量
+
+血压要经常量一量
+心里才有底
+
+运动也要跟上
+不用太猛
+每天走一走就很好了
+
+### 输入
+研究表明，长期睡眠不足会导致免疫力下降，增加心血管疾病风险。
+
+### 输出
+觉睡不好
+身体也跟着遭殃
+
+免疫力会下降
+什么毛病都容易找上门
+
+心脏和血管也受影响
+时间长了很危险
+
+## 边界
+- **红线**：不得推荐具体药品/治疗方法；内容必须止步科普（讲原理、讲现象、讲生活习惯）
+- **医学术语**：保留（血压、血糖、血脂等），但要有简短解释
+- **药名/剂量**：仅保留作为科普案例提及，不得暗示"推荐使用"
+- **数据**：换成口语化表达（10个人里有3个），不改数值
+- **天哥要求"改内容"**：退回改写阶段，humanizer 只负责去AI味不改医学信息
+- **单条成稿**：不超过屏幕高度（手机竖屏约 15-20 行），太长拆成多条
+
+## 触发
+- 老年健康赛道文稿输出时自动应用
+- 天哥说"去AI味" / "润色" / "改成口播" → 手动调用

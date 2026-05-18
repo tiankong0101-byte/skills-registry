@@ -1,0 +1,80 @@
+{
+  "skill_name": "deep-research-pro",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Research the current state of nuclear fusion energy",
+      "expected_output": "A detailed report on the current state of nuclear fusion energy, including key applications, recent advancements, and challenges.",
+      "assertions": [
+        "The report should include an executive summary.",
+        "The report should cover at least three major themes.",
+        "The report should cite multiple sources.",
+        "The report should mention recent advancements in nuclear fusion energy.",
+        "The report should address potential challenges in the field."
+      ],
+      "files": [
+        "~/clawd/research/nuclear-fusion/report.md"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Deep dive into Rust vs Go for backend services in 2026",
+      "expected_output": "A comprehensive report comparing Rust and Go for backend services in 2026, including their features, use cases, and future prospects.",
+      "assertions": [
+        "The report should include an executive summary.",
+        "The report should cover at least three major themes.",
+        "The report should cite multiple sources.",
+        "The report should compare Rust and Go in terms of features.",
+        "The report should discuss future prospects for both languages."
+      ],
+      "files": [
+        "~/clawd/research/rust-go/report.md"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Research the best strategies for bootstrapping a SaaS business",
+      "expected_output": "A detailed report on the best strategies for bootstrapping a SaaS business, including market analysis, customer acquisition, and growth hacking.",
+      "assertions": [
+        "The report should include an executive summary.",
+        "The report should cover at least three major themes.",
+        "The report should cite multiple sources.",
+        "The report should provide actionable insights for bootstrapping a SaaS business.",
+        "The report should address potential challenges in bootstrapping a SaaS business."
+      ],
+      "files": [
+        "~/clawd/research/saas-bootstrapping/report.md"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "What's happening with the US housing market right now?",
+      "expected_output": "A report on the current state of the US housing market, including trends, key indicators, and potential impacts.",
+      "assertions": [
+        "The report should include an executive summary.",
+        "The report should cover at least three major themes.",
+        "The report should cite multiple sources.",
+        "The report should provide up-to-date information on the US housing market.",
+        "The report should address potential impacts of the current housing market trends."
+      ],
+      "files": [
+        "~/clawd/research/us-housing-market/report.md"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Research the impact of climate change on coastal communities",
+      "expected_output": "A detailed report on the impact of climate change on coastal communities, including scientific evidence, case studies, and potential solutions.",
+      "assertions": [
+        "The report should include an executive summary.",
+        "The report should cover at least three major themes.",
+        "The report should cite multiple sources.",
+        "The report should provide scientific evidence on the impact of climate change on coastal communities.",
+        "The report should discuss potential solutions for addressing the impact of climate change on coastal communities."
+      ],
+      "files": [
+        "~/clawd/research/climate-change-coastal-communities/report.md"
+      ]
+    }
+  ]
+}

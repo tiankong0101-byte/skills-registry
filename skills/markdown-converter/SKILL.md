@@ -1,7 +1,8 @@
 ---
 name: markdown-converter
 description: |
-  Document format conversion, content parsing and multi-format export.
+  Unified document processor — format conversion, OCR, PDF manipulation, Word/Excel generation.
+  Triggers on any document task: convert, OCR, parse, create, edit PDF/DOCX/XLSX.
 metadata:
   openclaw:
     emoji: 📄
@@ -9,30 +10,58 @@ metadata:
     allowed_domains: []
 ---
 
-# markdown-converter
+# Document Processor — Unified
 
-Specialized skill for converting documents between formats, parsing structured content, and exporting to various output formats. Use when the user needs to transform documents from one format to another.
+A single interface for all document operations: **conversion**, **OCR**, **PDF**, **Word**, and **Excel**.
 
-## Trigger Conditions
+## Mode Selection
 
-- User asks to convert a document from one format to another (e.g., HTML to Markdown, Markdown to PDF)
-- User needs to extract structured content from unstructured documents
-- User requests batch conversion or format normalization
-- User needs content parsed and re-exported in a different structure
+| Mode | Capabilities | Prerequisites |
+|------|-------------|---------------|
+| Convert | Markdown ↔ HTML/JSON/Plain Text, batch normalization | None |
+| OCR | Image/scan → text (PaddleOCR) | PaddleOCR installed |
+| PDF | Parse, generate, merge, split, fill forms | Python PDF libs |
+| PDF (NL Edit) | Natural-language PDF page editing | `pip install nano-pdf` |
+| Word | Create/edit DOCX documents | Python-docx |
+| Excel | Create/read XLSX, data analysis | openpyxl |
 
-## Usage
+---
 
-1. **Identify Source & Target Formats** — Determine the input format (Markdown, HTML, plain text, JSON, CSV, LaTeX, etc.) and desired output format.
-2. **Parse Content** — Read and parse the source document. Handle edge cases: tables, code blocks, images, footnotes, front matter, embedded styles.
-3. **Transform** — Convert the content while preserving fidelity:
-   - **Markdown ↔ HTML**: Preserve headings, links, images, lists, code blocks, tables
-   - **Markdown ↔ JSON**: Structured data export/import
-   - **Markdown ↔ Plain Text**: Strip formatting while keeping structure
-   - **Markdown → PDF/Word**: Add appropriate formatting, page breaks, styling
-4. **Validate Output** — Check for data loss, broken links, malformed tables, or encoding issues.
-5. **Deliver** — Provide the converted document and a summary of any content adjustments or warnings.
+## Mode 1: Format Conversion
 
-## Requirements
+Markdown ↔ HTML, Markdown ↔ JSON, Markdown ↔ Plain Text. Preserve headings, links, images, lists, code blocks, tables, footnotes, front matter.
 
-- No external API keys required.
-- All conversion handled natively or via built-in tools.
+## Mode 2: OCR (Image/Scan → Text)
+
+```bash
+paddleocr-doc-parsing extract --file <image-path>
+paddleocr-doc-parsing parse --file <pdf-path> --output <output-dir>
+```
+
+For screenshots, scanned documents, invoices, receipts, forms.
+
+## Mode 3: PDF Operations
+
+- **Parsing**: Extract text, tables, images, metadata
+- **Generation**: Create PDFs from markdown, HTML, or structured data
+- **Manipulation**: Merge, split, rotate, reorder, watermarks
+- **Forms**: Fill form fields, extract data, flatten
+
+### Natural-Language PDF Editing
+```bash
+nano-pdf edit deck.pdf 1 "Change the title to 'Q3 Results'"
+```
+
+## Mode 4: Word Documents
+
+Create and edit .docx files with formatted text, tables, images, headers.
+
+## Mode 5: Excel Spreadsheets
+
+Create, read, and analyze .xlsx files. Generate reports, extract data, apply formatting.
+
+## Best Practice
+
+1. OCR first for scanned documents → then convert to target format
+2. PDF for fixed-layout output, DOCX for editable documents
+3. Excel for tabular data and reports

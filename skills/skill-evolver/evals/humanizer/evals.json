@@ -1,0 +1,63 @@
+{
+  "skill_name": "humanizer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "The new software update serves as a testament to the company's commitment to innovation. Moreover, it provides a seamless, intuitive, and powerful user experience—ensuring that users can accomplish their goals efficiently. It's not just an update, it's a revolution in how we think about productivity. Industry experts believe this will have a lasting impact on the entire sector, highlighting the company's pivotal role in the evolving technological landscape.",
+      "expected_output": "The software update adds batch processing, keyboard shortcuts, and offline mode. Early feedback from beta testers has been positive, with most reporting faster task completion.",
+      "assertions": [
+        "Inflated symbolism removed",
+        "AI vocabulary words removed",
+        "Superficial analysis removed",
+        "Negative parallelism removed",
+        "Vague attribution removed",
+        "AI vocabulary removed"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "As of 2023, the company has been growing steadily, with revenue increasing by 15% year over year. The management team has been praised for their strategic vision and commitment to innovation.",
+      "expected_output": "The company has seen steady growth, with revenue up 15% annually. The management team has been recognized for their strategic vision and innovation.",
+      "assertions": [
+        "Knowledge cutoff disclaimer removed",
+        "Generic positive conclusion removed",
+        "Overly positive tone removed"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "The project is on track, with all milestones completed as scheduled. The team has been working diligently to ensure its success.",
+      "expected_output": "The project is progressing as planned, with all milestones met on schedule. The team has been working hard to ensure success.",
+      "assertions": [
+        "Filler phrases removed",
+        "Excessive hedging removed",
+        "Generic positive conclusion removed"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "The new feature is a game-changer, providing a more efficient and user-friendly experience.",
+      "expected_output": "The new feature enhances usability and efficiency.",
+      "assertions": [
+        "Promotional language removed",
+        "Rule of three removed",
+        "Superficial analysis removed"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "The company's success is due to its innovative approach and strong team.",
+      "expected_output": "The company's success stems from its innovative approach and dedicated team.",
+      "assertions": [
+        "Vague attribution removed",
+        "AI vocabulary removed",
+        "Promotional language removed"
+      ],
+      "files": []
+    }
+  ]
+}

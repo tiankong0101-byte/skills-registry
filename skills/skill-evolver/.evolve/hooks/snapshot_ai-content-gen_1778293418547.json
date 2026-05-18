@@ -1,0 +1,42 @@
+{
+  "skillName": "ai-content-gen",
+  "wingId": 13,
+  "timestamp": "2026-05-09T02:23:38.545Z",
+  "metadata": {
+    "type": "round",
+    "round": 1,
+    "passRate": 0,
+    "accepted": false
+  },
+  "palaceStats": {
+    "wings": 14,
+    "rooms": 7,
+    "drawers": 7,
+    "halls": 10,
+    "versions": 18,
+    "activeVersions": 17
+  },
+  "bestVersion": {
+    "id": 18,
+    "wing_id": 13,
+    "version_id": "r1-1778293418533",
+    "pass_rate": 0,
+    "score": 0.1,
+    "dominated": 0,
+    "dominated_by_id": null,
+    "created_at": "2026-05-09 02:23:38",
+    "meta": "{\"assertionCount\":5}"
+  },
+  "recentHalls": [
+    {
+      "hall_type": "hall_failures",
+      "round": 1,
+      "created_at": "2026-05-09 02:23:38"
+    },
+    {
+      "hall_type": "hall_failures",
+      "round": 0,
+      "created_at": "2026-05-09 02:23:00"
+    }
+  ]
+}

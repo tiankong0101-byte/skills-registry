@@ -1,0 +1,16 @@
+[project]
+name = "news-extractor"
+version = "0.1.0"
+description = "新闻站点内容提取 - 支持微信公众号/今日头条/网易/搜狐/腾讯"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0",
+    "requests>=2.31",
+    "curl_cffi>=0.6",
+    "tenacity>=8.2",
+    "parsel>=1.8",
+    "demjson3>=1.7",
+]
+
+[project.scripts]
+extract-news = "extract_news:main"

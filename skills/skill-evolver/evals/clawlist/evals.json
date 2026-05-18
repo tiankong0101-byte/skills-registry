@@ -1,0 +1,55 @@
+{
+  "skill_name": "clawlist",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need to start a new project to build a web application.",
+      "expected_output": "The skill should initiate the brainstorming phase to clarify the project intent and explore approaches.",
+      "assertions": [
+        "The response should include the brainstorming phase.",
+        "The response should prompt for project details."
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I want to set up a long-running task to monitor my GitHub repositories.",
+      "expected_output": "The skill should initiate the brainstorming phase to clarify the task intent and explore approaches.",
+      "assertions": [
+        "The response should include the brainstorming phase.",
+        "The response should prompt for task details."
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I need to execute a task to update my blog posts.",
+      "expected_output": "The skill should initiate the doing-tasks phase to execute the task with skill discipline.",
+      "assertions": [
+        "The response should include the doing-tasks phase.",
+        "The response should prompt for task execution details."
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "I want to verify if my latest code deployment was successful.",
+      "expected_output": "The skill should initiate the verify-task phase to confirm the completion of the task.",
+      "assertions": [
+        "The response should include the verify-task phase.",
+        "The response should prompt for task verification details."
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "I need to manage multiple tasks simultaneously.",
+      "expected_output": "The skill should suggest the use of dispatch-multiple-agents between write-plan and doing-tasks.",
+      "assertions": [
+        "The response should include the dispatch-multiple-agents phase.",
+        "The response should prompt for task management details."
+      ],
+      "files": []
+    }
+  ]
+}

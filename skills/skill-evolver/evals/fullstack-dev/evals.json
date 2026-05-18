@@ -1,0 +1,60 @@
+{
+  "skill_name": "fullstack-dev",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to build a full-stack app using Express + React with a PostgreSQL database and REST API.",
+      "expected_output": "A detailed architectural plan and checklist for setting up a full-stack app using Express + React with a PostgreSQL database and REST API.",
+      "assertions": [
+        "The response should include project structure, API client approach, auth strategy, real-time method, and error handling decisions.",
+        "The response should include a checklist for scaffolding with the specified stack.",
+        "The response should include a summary of what was built, how to run it, and key files to know about."
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I need to create a CRUD app using Next.js API and MongoDB with JWT authentication.",
+      "expected_output": "A detailed architectural plan and checklist for setting up a CRUD app using Next.js API and MongoDB with JWT authentication.",
+      "assertions": [
+        "The response should include project structure, API client approach, auth strategy, real-time method, and error handling decisions.",
+        "The response should include a checklist for scaffolding with the specified stack.",
+        "The response should include a summary of what was built, how to run it, and key files to know about."
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I am building a real-time chat app using WebSocket and Go backend.",
+      "expected_output": "A detailed architectural plan and checklist for setting up a real-time chat app using WebSocket and Go backend.",
+      "assertions": [
+        "The response should include project structure, API client approach, auth strategy, real-time method, and error handling decisions.",
+        "The response should include a checklist for scaffolding with the specified stack.",
+        "The response should include a summary of what was built, how to run it, and key files to know about."
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "I want to implement error handling for a REST API using Express.",
+      "expected_output": "A detailed guide on implementing error handling for a REST API using Express.",
+      "assertions": [
+        "The response should include a description of the typed error hierarchy.",
+        "The response should include a global error handler middleware.",
+        "The response should include examples of how to handle different types of errors."
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "I need to set up file uploads using a presigned URL in a React app.",
+      "expected_output": "A detailed guide on setting up file uploads using a presigned URL in a React app.",
+      "assertions": [
+        "The response should include a description of the presigned URL pattern.",
+        "The response should include an example of how to generate a presigned URL on the backend.",
+        "The response should include an example of how to upload a file using the presigned URL on the frontend."
+      ],
+      "files": []
+    }
+  ]
+}

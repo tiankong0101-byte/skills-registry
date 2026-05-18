@@ -1,0 +1,71 @@
+{
+  "skill_name": "minimax-docx",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a new report document with title 'Annual Report 2023' and author 'John Doe'.",
+      "expected_output": "A new DOCX document named 'Annual Report 2023.docx' is created with the specified title and author.",
+      "assertions": [
+        "The document is created successfully",
+        "The document contains the title 'Annual Report 2023'",
+        "The document contains the author 'John Doe'"
+      ],
+      "files": [
+        "Annual Report 2023.docx"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Edit the content of 'example.docx' by replacing all occurrences of 'old text' with 'new text'.",
+      "expected_output": "The content of 'example.docx' is edited, replacing all occurrences of 'old text' with 'new text'.",
+      "assertions": [
+        "The document is edited successfully",
+        "All occurrences of 'old text' are replaced with 'new text'",
+        "The document structure remains unchanged"
+      ],
+      "files": [
+        "example.docx"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Apply the 'ModernCorporate' template to 'source.docx' and save as 'output.docx'.",
+      "expected_output": "The 'source.docx' is formatted using the 'ModernCorporate' template and saved as 'output.docx'.",
+      "assertions": [
+        "The document is formatted successfully",
+        "The document follows the 'ModernCorporate' template styles",
+        "The document content is preserved"
+      ],
+      "files": [
+        "source.docx",
+        "output.docx"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Create a new document and add a section with a table containing 3 columns and 2 rows.",
+      "expected_output": "A new DOCX document is created with a section containing a table with 3 columns and 2 rows.",
+      "assertions": [
+        "The document is created successfully",
+        "The document contains a table with 3 columns and 2 rows",
+        "The table is properly formatted"
+      ],
+      "files": [
+        "new_document.docx"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Fill in placeholders in 'template.docx' using the data {\"name\": \"Jane Doe\", \"age\": \"30\"}.",
+      "expected_output": "The placeholders in 'template.docx' are filled using the provided data.",
+      "assertions": [
+        "The document is filled successfully",
+        "The placeholders are replaced with the provided data",
+        "The document structure remains unchanged"
+      ],
+      "files": [
+        "template.docx"
+      ]
+    }
+  ]
+}

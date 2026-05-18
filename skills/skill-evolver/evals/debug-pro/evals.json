@@ -1,0 +1,70 @@
+{
+  "skill_name": "debug-pro",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "My Node.js app shows 'Cannot read property of undefined'. How do I debug this?",
+      "expected_output": "Should follow the 7-step protocol: reproduce, isolate, hypothesize, instrument, verify, fix, regression test. Should mention Node.js-specific debugging tools like --inspect-brk, console.trace, JSON.stringify for object inspection.",
+      "assertions": [
+        "Follows the 7-step protocol in order",
+        "Mentions reproducing consistently first",
+        "Mentions isolating scope (commenting, binary search)",
+        "Mentions specific Node.js debugging commands",
+        "Mentions regression testing after fix"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "My Python script has a memory leak. It starts fine but gets slower over time.",
+      "expected_output": "Should use Python-specific tools: tracemalloc for memory tracking, cProfile for profiling. Should follow the 7-step protocol.",
+      "assertions": [
+        "Uses python -X tracemalloc for memory debugging",
+        "Uses python -m cProfile for performance analysis",
+        "Follows the 7-step debugging protocol",
+        "Mentions reproducing the slow performance",
+        "Mentions regression test after fix"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "My app returns a CORS error. I haven't changed anything.",
+      "expected_output": "Should reference the Common Error Patterns table. Should suggest: check backend CORS middleware, verify allowed origins. Should follow the 7-step protocol.",
+      "assertions": [
+        "References CORS error from Common Error Patterns",
+        "Mentions backend missing CORS headers",
+        "Suggests adding CORS middleware with correct origins",
+        "Follows reproduce, isolate, hypothesize, fix flow",
+        "Mentions regression testing"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "My git bisect found the bad commit but I'm not sure how to fix it.",
+      "expected_output": "Should explain what git bisect found (which commit introduced the bug). Should then follow the 7-step protocol starting from that commit. Should isolate what changed in that specific commit.",
+      "assertions": [
+        "Explains reading the commit that introduced the bug",
+        "Isolates what specifically changed in that commit",
+        "Follows the 7-step protocol from that point",
+        "Mentions verifying the root cause before fixing",
+        "Mentions creating a regression test"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "My Swift app crashes with EXC_BAD_ACCESS. How do I debug this?",
+      "expected_output": "Should reference the common error patterns for segmentation fault / memory issues. Should suggest LLDB debugging commands: breakpoint, run, po for variable inspection. Should follow the 7-step protocol.",
+      "assertions": [
+        "References memory corruption / null pointer from error patterns",
+        "Mentions LLDB debugging commands",
+        "Mentions Instruments for memory profiling",
+        "Follows the 7-step protocol",
+        "Mentions regression testing"
+      ],
+      "files": []
+    }
+  ]
+}

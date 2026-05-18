@@ -1,0 +1,55 @@
+{
+  "skill_name": "flutter-dev",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "How can I manage state in a Flutter app using Riverpod?",
+      "expected_output": "Riverpod provides a dependency injection and state management solution for Flutter apps. It includes providers like StateProvider, NotifierProvider, and AsyncNotifierProvider to manage state in a simple and efficient way.",
+      "assertions": [
+        "Check if the response mentions Riverpod",
+        "Ensure the response explains the different types of providers"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "What are some best practices for optimizing Flutter widgets?",
+      "expected_output": "Some best practices for optimizing Flutter widgets include using const constructors, extracting static widgets to separate const classes, using Key for list items, and preferring ConsumerWidget over StatefulWidget for state. Additionally, it's important to profile with DevTools before optimizing and target <16ms frame time for 60fps.",
+      "assertions": [
+        "Check if the response mentions const constructors",
+        "Ensure the response includes the importance of profiling with DevTools"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "How can I handle navigation in a Flutter app using GoRouter?",
+      "expected_output": "GoRouter is a navigation package for Flutter that allows you to set up typed routes and handle deep linking. It also provides auth guards via redirect and state preservation across routes. To use GoRouter, you need to set up routes, define guards, and use context.go/push to navigate between routes.",
+      "assertions": [
+        "Check if the response mentions GoRouter",
+        "Ensure the response explains how to set up routes and handle navigation"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "What are some performance optimization techniques in Flutter?",
+      "expected_output": "Some performance optimization techniques in Flutter include preventing rebuilds with const constructors, selectively updating widgets with ref.watch(provider.select(...)), isolating repaints with RepaintBoundary, using lazy lists with ListView.builder, offloading heavy computation with compute() isolate, and caching images with cached_network_image.",
+      "assertions": [
+        "Check if the response mentions const constructors",
+        "Ensure the response includes the use of compute() isolate"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "How can I write widget tests in Flutter?",
+      "expected_output": "To write widget tests in Flutter, you can use the widget tester provided by the Flutter framework. This allows you to test the UI components of your app. You can also use packages like bloc_test for testing Bloc state management. For example, you can use the `blocTest` function to test the behavior of a Bloc under different conditions.",
+      "assertions": [
+        "Check if the response mentions widget tester",
+        "Ensure the response includes the use of bloc_test"
+      ],
+      "files": []
+    }
+  ]
+}

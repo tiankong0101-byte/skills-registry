@@ -1,0 +1,21 @@
+{
+  "skillName": "self-improving",
+  "wingId": 10,
+  "timestamp": "2026-05-09T02:20:46.828Z",
+  "metadata": {
+    "type": "eval",
+    "passRate": 0.2,
+    "score": 0.5,
+    "passed": true
+  },
+  "palaceStats": {
+    "wings": 13,
+    "rooms": 7,
+    "drawers": 7,
+    "halls": 8,
+    "versions": 16,
+    "activeVersions": 16
+  },
+  "bestVersion": null,
+  "recentHalls": []
+}

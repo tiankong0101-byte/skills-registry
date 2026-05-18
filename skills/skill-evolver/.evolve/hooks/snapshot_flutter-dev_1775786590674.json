@@ -1,0 +1,37 @@
+{
+  "skillName": "flutter-dev",
+  "wingId": 2,
+  "timestamp": "2026-04-10T02:03:10.663Z",
+  "metadata": {
+    "type": "eval",
+    "passRate": 1,
+    "score": 1,
+    "passed": true
+  },
+  "palaceStats": {
+    "wings": 9,
+    "rooms": 7,
+    "drawers": 7,
+    "halls": 7,
+    "versions": 15,
+    "activeVersions": 15
+  },
+  "bestVersion": {
+    "id": 2,
+    "wing_id": 2,
+    "version_id": "1775719191908",
+    "pass_rate": 0.8,
+    "score": 0.9,
+    "dominated": 0,
+    "dominated_by_id": null,
+    "created_at": "2026-04-09 07:48:07",
+    "meta": "{\"original\":{\"id\":1775719191908,\"timestamp\":\"2026-04-09T07:19:51.908Z\",\"passRate\":0.8,\"score\":0.9,\"assertionCount\":5,\"dominated\":false}}"
+  },
+  "recentHalls": [
+    {
+      "hall_type": "hall_failures",
+      "round": 0,
+      "created_at": "2026-04-09 07:48:07"
+    }
+  ]
+}

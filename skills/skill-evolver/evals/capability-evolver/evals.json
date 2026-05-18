@@ -1,0 +1,65 @@
+{
+  "skill_name": "capability-evolver",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Run the evolution cycle in automated mode.",
+      "expected_output": "The skill should execute the evolution cycle and apply any identified improvements.",
+      "assertions": [
+        "The script should run without errors",
+        "The script should apply any identified improvements"
+      ],
+      "files": [
+        "src/index.js"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Run the evolution cycle in review mode.",
+      "expected_output": "The skill should pause and ask for confirmation before applying any identified improvements.",
+      "assertions": [
+        "The script should pause and ask for confirmation",
+        "The script should not apply any improvements without confirmation"
+      ],
+      "files": [
+        "src/index.js"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Run the evolution cycle in infinite loop mode.",
+      "expected_output": "The skill should continuously run the evolution cycle until manually stopped.",
+      "assertions": [
+        "The script should continuously run the evolution cycle",
+        "The script should not stop until manually stopped"
+      ],
+      "files": [
+        "src/index.js"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Check the version of the skill.",
+      "expected_output": "The script should output the current version of the skill.",
+      "assertions": [
+        "The script should output the current version",
+        "The output should match the version in package.json"
+      ],
+      "files": [
+        "src/index.js"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Run the evolution cycle with an invalid environment variable.",
+      "expected_output": "The script should handle the invalid environment variable gracefully and continue running.",
+      "assertions": [
+        "The script should handle the invalid environment variable",
+        "The script should continue running without errors"
+      ],
+      "files": [
+        "src/index.js"
+      ]
+    }
+  ]
+}

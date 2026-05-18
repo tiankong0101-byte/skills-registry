@@ -1,0 +1,70 @@
+{
+  "skill_name": "skill-creator",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a skill for summarizing articles. Users say things like 'summarize this article', 'TL;DR', 'give me the key points'.",
+      "expected_output": "Should follow the 6-step skill creation process: understand with examples, plan reusable contents, initialize, edit, package, iterate. Should include YAML frontmatter with name and description. Should create SKILL.md with trigger phrases. Should identify scripts/references/assets needed.",
+      "assertions": [
+        "Follows 6-step skill creation process",
+        "Includes YAML frontmatter with name and description",
+        "Includes trigger phrases in description",
+        "Identifies reusable scripts/references/assets",
+        "Mentions SKILL.md template structure",
+        "Includes evaluation criteria or examples"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I want to create a skill that helps with Excel formulas. People ask things like 'how do I use VLOOKUP', 'create a pivot table', 'make a chart'.",
+      "expected_output": "Should analyze concrete examples to identify reusable resources. For Excel formulas, likely needs reference documentation (formula syntax), examples, and possibly scripts. Should create proper directory structure: SKILL.md, references/, scripts/.",
+      "assertions": [
+        "Analyzes user examples to identify skill requirements",
+        "Identifies reference documentation as needed",
+        "Creates proper directory structure",
+        "Includes trigger phrases for Excel-related tasks",
+        "Follows progressive disclosure design principle"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Create a skill that helps debug JavaScript code. People say 'it's broken', 'this throws an error', 'why isn't this working'.",
+      "expected_output": "Should follow the systematic debugging approach. Should identify scripts that could help (e.g., debugging scripts), references (JS error patterns), and proper SKILL.md structure. Should include YAML frontmatter.",
+      "assertions": [
+        "Uses systematic debugging methodology",
+        "Creates SKILL.md with proper YAML frontmatter",
+        "Identifies reusable debugging scripts",
+        "Includes JS-specific error pattern references",
+        "Follows progressive disclosure (SKILL.md lean, references detailed)"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Make a skill for image resizing. Users say 'resize this image', 'make it smaller', 'change the dimensions'.",
+      "expected_output": "Should identify that this needs a script (deterministic image processing), not just instructions. Should follow the init-edit-package-iterate workflow. Should include proper frontmatter.",
+      "assertions": [
+        "Identifies script need for deterministic operations",
+        "Creates proper SKILL.md with frontmatter",
+        "Follows the 6-step creation process",
+        "Mentions trigger phrases for image resizing tasks"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Build me a skill that manages my calendar. Users say 'schedule a meeting', 'check my availability', 'set a reminder'.",
+      "expected_output": "Should understand this is a complex skill requiring API integration. Should recommend starting with examples, identifying tools/APIs needed, and progressive disclosure. Should not create a skill that tries to do too much in one place.",
+      "assertions": [
+        "Breaks down complex skills into manageable parts",
+        "Identifies trigger phrases for calendar tasks",
+        "Recommends progressive disclosure design",
+        "Suggests appropriate script/reference/asset separation",
+        "Does not overpromise (acknowledges complexity)"
+      ],
+      "files": []
+    }
+  ]
+}

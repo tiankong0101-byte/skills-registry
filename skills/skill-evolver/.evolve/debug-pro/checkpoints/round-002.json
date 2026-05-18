@@ -1,0 +1,6 @@
+{
+  "skillName": "debug-pro",
+  "round": 2,
+  "content": "# debug-pro\n\nSystematic debugging methodology and language-specific debugging commands.\n\n## The 7-Step Debugging Protocol\n\n1. **Reproduce** — Get it to fail consistently. Document exact steps, inputs, and environment.\n2. **Isolate** — Narrow scope. Comment out code, use binary search, check recent commits with `git bisect`.\n3. **Hypothesize** — Form a specific, testable theory about the root cause.\n4. **Instrument** — Add targeted logging, breakpoints, or assertions.\n5. **Verify** — Confirm root cause. If hypothesis was wrong, return to step 3.\n6. **Fix** — Apply the minimal correct fix. Resist the urge to refactor while debugging.\n7. **Regression Test** — Write a test that catches this bug. Verify it passes.\n\n## Language-Specific Debugging\n\n### JavaScript / TypeScript",
+  "timestamp": "2026-04-09T07:13:56.521Z"
+}

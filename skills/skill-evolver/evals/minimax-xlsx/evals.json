@@ -1,0 +1,72 @@
+{
+  "skill_name": "minimax-xlsx",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Please create a new Excel file with a single sheet named 'Sales Data' and add a column 'Total' with the formula '=SUM(B2:B10)'",
+      "expected_output": "A new Excel file named 'output.xlsx' with a single sheet 'Sales Data' containing a column 'Total' with the formula '=SUM(B2:B10)'",
+      "assertions": [
+        "The output file should contain a single sheet named 'Sales Data'",
+        "The 'Total' column should be added with the formula '=SUM(B2:B10)'",
+        "The output file should be saved as 'output.xlsx'"
+      ],
+      "files": [
+        "output.xlsx"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Can you read the 'Sales Data' sheet from the 'example.xlsx' file and calculate the total revenue?",
+      "expected_output": "The total revenue calculated from the 'Sales Data' sheet in 'example.xlsx'",
+      "assertions": [
+        "The script should read the 'Sales Data' sheet from 'example.xlsx'",
+        "The total revenue should be calculated directly from the DataFrame column",
+        "The output should be the sum of the 'Revenue' column"
+      ],
+      "files": [
+        "example.xlsx"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Please edit the 'Sales Data' sheet in 'example.xlsx' and update the value in cell B3 to 1500",
+      "expected_output": "The 'Sales Data' sheet in 'example.xlsx' should be edited with the value 1500 in cell B3",
+      "assertions": [
+        "The output file should contain the same sheets as the input",
+        "The value in cell B3 should be updated to 1500",
+        "The output file should be saved as 'output.xlsx'"
+      ],
+      "files": [
+        "example.xlsx",
+        "output.xlsx"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Can you validate the formulas in the 'Sales Data' sheet of 'example.xlsx'?",
+      "expected_output": "The validation result of the formulas in the 'Sales Data' sheet of 'example.xlsx'",
+      "assertions": [
+        "The script should validate the formulas in the 'Sales Data' sheet",
+        "The output should be the result of the formula validation",
+        "The output should indicate whether the formulas are valid or not"
+      ],
+      "files": [
+        "example.xlsx"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Please fix any broken formulas in the 'Sales Data' sheet of 'example.xlsx'",
+      "expected_output": "The 'Sales Data' sheet in 'example.xlsx' should have any broken formulas fixed",
+      "assertions": [
+        "The output file should contain the same sheets as the input",
+        "Any broken formulas in the 'Sales Data' sheet should be fixed",
+        "The output file should be saved as 'output.xlsx'"
+      ],
+      "files": [
+        "example.xlsx",
+        "output.xlsx"
+      ]
+    }
+  ]
+}

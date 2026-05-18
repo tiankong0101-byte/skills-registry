@@ -1,0 +1,9 @@
+{
+  "name": "skill-evolver",
+  "version": "1.0.0",
+  "installed": "2026-04-08",
+  "source": "local",
+  "evolvable": true,
+  "eval_count": 4,
+  "notes": "EvoSkills/EvoSkill 论文实现，支持自动进化、隔离验证、Pareto前沿"
+}

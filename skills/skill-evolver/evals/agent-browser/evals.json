@@ -1,0 +1,55 @@
+{
+  "skill_name": "agent-browser",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "agent-browser open https://example.com",
+      "expected_output": "Navigates to https://example.com",
+      "assertions": [
+        "Checks if the browser opens the specified URL",
+        "Verifies the page title of the opened URL"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "agent-browser snapshot -i",
+      "expected_output": "Returns interactive elements with refs",
+      "assertions": [
+        "Checks if the snapshot command returns elements with refs",
+        "Verifies the presence of refs in the output"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "agent-browser click @e1",
+      "expected_output": "Clicks the element with ref @e1",
+      "assertions": [
+        "Checks if the click command is executed successfully",
+        "Verifies if the element is interacted with"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "agent-browser fill @e2 'test@example.com'",
+      "expected_output": "Fills the element with ref @e2 with 'test@example.com'",
+      "assertions": [
+        "Checks if the fill command is executed successfully",
+        "Verifies if the input field is filled with the specified text"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "agent-browser wait --text 'Success'",
+      "expected_output": "Waits for the text 'Success' to appear on the page",
+      "assertions": [
+        "Checks if the wait command is executed successfully",
+        "Verifies if the specified text appears on the page"
+      ],
+      "files": []
+    }
+  ]
+}

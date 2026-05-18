@@ -1,7 +1,8 @@
 ---
 name: image
 description: |
-  Image processing, analysis and generation capabilities.
+  Unified image skill — processing, analysis, generation, and graphic design.
+  Triggers on any image task: edit, generate, analyze, OCR, brand assets, social media graphics.
 metadata:
   openclaw:
     emoji: 🖼
@@ -9,29 +10,46 @@ metadata:
     allowed_domains: []
 ---
 
-# image
+# Image — Unified
 
-Specialized skill for comprehensive image-related tasks including processing, analysis, manipulation, and generation. Use when the user needs to work with image files in any capacity.
+Covers all image operations: **processing**, **generation** (with Nano Banana Pro / Gemini), and **graphic design**.
 
-## Trigger Conditions
+---
 
-- User asks to analyze, describe, or extract information from an image
-- User requests image editing, resizing, cropping, or format conversion
-- User needs to generate new images from descriptions
-- User wants to compare images, detect differences, or perform OCR
+## Mode 1: Image Processing & Analysis
 
-## Usage
+- Analyze: describe content, detect objects, OCR, color analysis
+- Process: resize, crop, rotate, filter, compress, format convert
+- Compare: find differences, similarity check
 
-1. **Identify Task Type** — Classify the request:
-   - **Analysis** — Describe content, detect objects, read text (OCR), analyze colors/composition
-   - **Processing** — Resize, crop, rotate, filter, compress, convert format
-   - **Generation** — Create new images from text descriptions or style transfer
-   - **Comparison** — Find differences, check similarity, verify integrity
-2. **Read Input** — Accept image files via provided paths or URLs. Validate format and accessibility.
-3. **Execute** — Perform the requested operation. For analysis, provide detailed structured output. For processing, apply transformations. For generation, craft prompts and produce images.
-4. **Deliver** — Return results (analysis text, processed image, generated image) with descriptions of what was done and any parameters used.
+## Mode 2: Image Generation (Nano Banana Pro / Gemini 3 Pro)
 
-## Requirements
+```bash
+# Generate new image
+uv run ./scripts-nano-banana/generate_image.py \
+  --prompt "your description" --filename "output.png" [--resolution 1K|2K|4K]
 
-- No external API keys required for basic processing and analysis.
-- Generation features may require `OPENAI_API_KEY` if using DALL-E or similar services.
+# Edit existing image
+uv run ./scripts-nano-banana/generate_image.py \
+  --prompt "editing instructions" --filename "output.png" \
+  --input-image "input.png"
+```
+
+### Workflow: Draft → Iterate → Final
+- Draft at 1K for fast feedback
+- Refine at 2K
+- Final at 4K
+
+## Mode 3: Graphic Design
+
+For brand assets, social media graphics, logos, illustrations:
+- Define requirements (purpose, dimensions, brand colors, style)
+- Generate concepts or mood boards
+- Produce final assets in required formats
+- Requires `OPENAI_API_KEY` for AI-powered design generation
+
+## Best Practices
+
+1. Start with processing/analysis for existing images
+2. Use draft→iterate→final workflow for generation
+3. Export in appropriate format (PNG for UI, SVG for logos, JPEG for photos)

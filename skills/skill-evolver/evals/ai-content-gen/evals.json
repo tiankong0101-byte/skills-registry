@@ -1,0 +1,59 @@
+{
+  "skill_name": "ai-content-gen",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "生成一篇关于人工智能的文章。",
+      "expected_output": "AI写作功能应生成一篇关于人工智能的文章。",
+      "assertions": [
+        "文章应包含人工智能的定义",
+        "文章应包含人工智能的应用案例"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "生成一张关于机器学习的图片。",
+      "expected_output": "AI绘图功能应生成一张关于机器学习的图片。",
+      "assertions": [
+        "图片应包含机器学习的图标",
+        "图片应包含机器学习的关键词"
+      ],
+      "files": [
+        "output_image.png"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "优化以下标题：\"AI的未来\"。",
+      "expected_output": "标题生成功能应优化标题为：\"AI的未来趋势\"。",
+      "assertions": [
+        "优化后的标题应包含\"趋势\"一词",
+        "优化后的标题应简洁明了"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "审核以下内容：\"AI可以取代人类工作\"。",
+      "expected_output": "自动审核功能应标记内容为：\"不适宜\"。",
+      "assertions": [
+        "内容应被标记为不适宜",
+        "应提供审核建议"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "生成一个关于AI的视频。",
+      "expected_output": "AI视频功能应生成一个关于AI的视频。",
+      "assertions": [
+        "视频应包含AI的介绍",
+        "视频应包含AI的应用场景"
+      ],
+      "files": [
+        "output_video.mp4"
+      ]
+    }
+  ]
+}

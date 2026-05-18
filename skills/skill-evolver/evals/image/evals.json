@@ -1,0 +1,55 @@
+{
+  "skill_name": "image",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need to optimize a product photo for web delivery.",
+      "expected_output": "The skill should recommend using JPEG or WebP formats with appropriate compression settings for web optimization.",
+      "assertions": [
+        "The response should suggest JPEG or WebP formats.",
+        "The response should include compression settings for web optimization."
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I want to create a social media post image with a specific aspect ratio.",
+      "expected_output": "The skill should recommend using PNG or lossless WebP formats and provide guidance on maintaining sharp edges and avoiding blur.",
+      "assertions": [
+        "The response should suggest PNG or lossless WebP formats.",
+        "The response should include guidance on maintaining sharp edges."
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I need to export a logo for use on a website.",
+      "expected_output": "The skill should recommend using SVG format for logos and provide guidance on preserving color intent and transparency.",
+      "assertions": [
+        "The response should suggest SVG format.",
+        "The response should include guidance on preserving color intent."
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "I have a RAW photo and I need to convert it for web use.",
+      "expected_output": "The skill should recommend converting the RAW photo to JPEG or WebP and provide guidance on maintaining color accuracy and detail.",
+      "assertions": [
+        "The response should suggest converting the RAW photo to JPEG or WebP.",
+        "The response should include guidance on maintaining color accuracy."
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "I need to resize a screenshot for a social media post.",
+      "expected_output": "The skill should recommend using PNG or lossless WebP formats and provide guidance on maintaining sharp edges and avoiding blur.",
+      "assertions": [
+        "The response should suggest PNG or lossless WebP formats.",
+        "The response should include guidance on maintaining sharp edges."
+      ],
+      "files": []
+    }
+  ]
+}

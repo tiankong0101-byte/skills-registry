@@ -1,0 +1,65 @@
+{
+  "skill_name": "ffmpeg-cli",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Cut video segment from video.mp4 from 00:01:30 to 00:02:45 and save as clip.mp4",
+      "expected_output": "Clip segment from video.mp4 from 00:01:30 to 00:02:45 saved as clip.mp4",
+      "assertions": [
+        "check if clip.mp4 exists",
+        "check if clip.mp4 duration is between 1 minute and 2 minutes"
+      ],
+      "files": [
+        "clip.mp4"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Merge part1.mp4, part2.mp4, and part3.mp4 into a single file named merged.mp4",
+      "expected_output": "Videos part1.mp4, part2.mp4, and part3.mp4 merged into a single file named merged.mp4",
+      "assertions": [
+        "check if merged.mp4 exists",
+        "check if merged.mp4 contains all parts"
+      ],
+      "files": [
+        "merged.mp4"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Extract audio from video.mp4 and save as audio.mp3",
+      "expected_output": "Audio extracted from video.mp4 and saved as audio.mp3",
+      "assertions": [
+        "check if audio.mp3 exists",
+        "check if audio.mp3 is in MP3 format"
+      ],
+      "files": [
+        "audio.mp3"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Generate a thumbnail from video.mp4 at 00:00:15 and save as frame.jpg",
+      "expected_output": "Thumbnail generated from video.mp4 at 00:00:15 and saved as frame.jpg",
+      "assertions": [
+        "check if frame.jpg exists",
+        "check if frame.jpg is a valid image"
+      ],
+      "files": [
+        "frame.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Create a GIF from video.mp4 from 00:00:10 to 00:00:15 and save as clip.gif",
+      "expected_output": "GIF created from video.mp4 from 00:00:10 to 00:00:15 and saved as clip.gif",
+      "assertions": [
+        "check if clip.gif exists",
+        "check if clip.gif is a valid GIF"
+      ],
+      "files": [
+        "clip.gif"
+      ]
+    }
+  ]
+}

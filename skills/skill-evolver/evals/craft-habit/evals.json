@@ -1,0 +1,72 @@
+{
+  "skill_name": "craft-habit",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to build a practice habit for drawing.",
+      "expected_output": "A practice system tailored for drawing, including three versions of practice, a skill-specific training strategy, a habit stack, warm-up and shutdown rituals, progress tracking, an obstacle playbook, and a starter plan.",
+      "assertions": [
+        "The response should include three versions of practice.",
+        "The strategy should be specific to drawing.",
+        "The habit stack should be tailored to drawing.",
+        "The warm-up and shutdown rituals should be practical for drawing.",
+        "The progress tracking should be simple and specific to drawing.",
+        "The obstacle playbook should address common challenges in drawing practice.",
+        "The starter plan should provide actionable steps for the user."
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I'm a beginner in photography and want to practice every day.",
+      "expected_output": "A practice system tailored for beginner photography, including three versions of practice, a skill-specific training strategy, a habit stack, warm-up and shutdown rituals, progress tracking, an obstacle playbook, and a starter plan.",
+      "assertions": [
+        "The response should include three versions of practice.",
+        "The strategy should be specific to photography.",
+        "The habit stack should be tailored to photography.",
+        "The warm-up and shutdown rituals should be practical for photography.",
+        "The progress tracking should be simple and specific to photography.",
+        "The obstacle playbook should address common challenges in photography practice.",
+        "The starter plan should provide actionable steps for the user."
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I have limited time and want a quick practice routine.",
+      "expected_output": "A practice system with a minimum version of 2-5 minutes, tailored to the user's available time.",
+      "assertions": [
+        "The response should include a minimum version of practice.",
+        "The minimum version should be 2-5 minutes.",
+        "The response should be tailored to the user's available time."
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "I'm feeling overwhelmed and need a simple habit to start with.",
+      "expected_output": "A practice system with a minimum version of 2-5 minutes, tailored to the user's energy and life constraints.",
+      "assertions": [
+        "The response should include a minimum version of practice.",
+        "The minimum version should be 2-5 minutes.",
+        "The response should be tailored to the user's energy and life constraints."
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "I want to practice singing but don't have a specific goal.",
+      "expected_output": "A practice system tailored for singing, including three versions of practice, a skill-specific training strategy, a habit stack, warm-up and shutdown rituals, progress tracking, an obstacle playbook, and a starter plan.",
+      "assertions": [
+        "The response should include three versions of practice.",
+        "The strategy should be specific to singing.",
+        "The habit stack should be tailored to singing.",
+        "The warm-up and shutdown rituals should be practical for singing.",
+        "The progress tracking should be simple and specific to singing.",
+        "The obstacle playbook should address common challenges in singing practice.",
+        "The starter plan should provide actionable steps for the user."
+      ],
+      "files": []
+    }
+  ]
+}

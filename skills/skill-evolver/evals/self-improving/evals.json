@@ -1,0 +1,55 @@
+{
+  "skill_name": "self-improving",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "What do you know about AI?",
+      "expected_output": "Search all tiers for AI",
+      "assertions": [
+        "Checks if the prompt triggers the search functionality",
+        "Verifies the response is a search query"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Show my patterns",
+      "expected_output": "List memory.md (HOT)",
+      "assertions": [
+        "Checks if the prompt triggers the listing of patterns",
+        "Verifies the response is the contents of memory.md"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Forget Flutter",
+      "expected_output": "Remove Flutter from all tiers (confirm first)",
+      "assertions": [
+        "Checks if the prompt triggers the removal functionality",
+        "Verifies the response asks for confirmation before removal"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Memory stats",
+      "expected_output": "Show counts per tier",
+      "assertions": [
+        "Checks if the prompt triggers the memory stats functionality",
+        "Verifies the response provides counts per tier"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "What's in warm storage?",
+      "expected_output": "List files in projects/ + domains/",
+      "assertions": [
+        "Checks if the prompt triggers the listing of warm storage",
+        "Verifies the response lists files in projects/ and domains/"
+      ],
+      "files": []
+    }
+  ]
+}

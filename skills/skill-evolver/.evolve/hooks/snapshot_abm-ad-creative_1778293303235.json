@@ -1,0 +1,21 @@
+{
+  "skillName": "abm-ad-creative",
+  "wingId": 9,
+  "timestamp": "2026-05-09T02:21:43.234Z",
+  "metadata": {
+    "type": "eval",
+    "passRate": 0,
+    "score": 0.4666666666666666,
+    "passed": false
+  },
+  "palaceStats": {
+    "wings": 13,
+    "rooms": 7,
+    "drawers": 7,
+    "halls": 8,
+    "versions": 16,
+    "activeVersions": 16
+  },
+  "bestVersion": null,
+  "recentHalls": []
+}

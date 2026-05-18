@@ -1,31 +1,59 @@
 ---
 name: self-improving-agent
 description: |
-  Autonomous skill self-iteration and system evolution.
+  Autonomous skill iteration, system evolution, behavior refinement, and adaptive learning.
+  Triggers on error analysis, skill optimization, usage-based learning, and improvement cycles.
 metadata:
   openclaw:
     emoji: 🔄
   security: {}
 ---
 
-# self-improving-agent
+# Self-Improving Agent — Unified
 
-Autonomous skill and system evolution. Use when skills need automatic updates, improvements, or adaptation based on usage patterns.
+Combines skill evolution, error analysis, and adaptive learning into one continuous improvement loop.
+
+## Improvement Loop
+
+```
+Collect Data → Analyze → Plan → Apply → Validate → Learn
+```
+
+---
+
+## Cycle 1: Error Analysis & Behavior Refinement
+
+1. Review recent executions — identify mistakes and suboptimal decisions
+2. Analyze root causes — knowledge gap, incorrect assumption, tool misuse?
+3. Formulate concrete improvement actions
+4. Apply improvements to configs, skills, or behavior
+5. Track whether errors recur
+
+## Cycle 2: Skill Evolution
+
+1. Analyze skill usage data and feedback signals
+2. Identify improvements — trigger conditions, instructions, examples
+3. Apply changes to SKILL.md and associated files
+4. Validate no regressions
+5. Document changelog
+
+## Cycle 3: Adaptive Learning
+
+1. Track usage patterns and outcomes
+2. Adjust behavior based on historical success/failure
+3. Implement feedback loops for continuous improvement
+4. Learn user preferences and adapt responses
+5. Optimize skill selection and parameter tuning
+6. Maintain learning state across sessions
 
 ## Trigger Conditions
 
+- After completing a task — review what could have improved
+- Error patterns repeat across sessions
 - A skill is outdated or could be more effective
-- Usage patterns suggest a skill needs refinement
+- Usage patterns suggest refinement needs
+- Periodic self-evaluation and improvement cycles
 - New capabilities should be incorporated into existing skills
-- Automated updates to skill definitions and workflows
-
-## Usage
-
-1. Analyze skill usage data and feedback signals
-2. Identify specific improvements — better trigger conditions, clearer instructions, additional examples
-3. Apply changes to the skill's SKILL.md and associated files
-4. Validate that improvements do not break existing functionality
-5. Document the change log for each skill iteration
 
 ## Requirements
 
